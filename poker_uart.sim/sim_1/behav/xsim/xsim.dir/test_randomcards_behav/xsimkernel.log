@@ -1,0 +1,7 @@
+Running: xsim.dir/test_randomcards_behav/xsimk.exe -simmode gui -wdb test_randomcards_behav.wdb -simrunnum 0 -socket 50980
+Design successfully loaded
+Design Loading Memory Usage: 7784 KB (Peak: 7784 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 8472 KB (Peak: 8472 KB)
+Simulation CPU Usage: 0 ms

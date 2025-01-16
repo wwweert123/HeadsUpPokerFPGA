@@ -1,0 +1,166 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr  7 03:06:46 2024
+| Host         : Fred_Laptop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file poker_uart_control_sets_placed.rpt
+| Design       : poker_uart
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    96 |
+| Unused register locations in slices containing registers |   138 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      8 |           23 |
+|     10 |            7 |
+|     12 |            6 |
+|     14 |           15 |
+|    16+ |           43 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             594 |          191 |
+| No           | No                    | Yes                    |             258 |           44 |
+| No           | Yes                   | No                     |             624 |          106 |
+| Yes          | No                    | No                     |             804 |          213 |
+| Yes          | No                    | Yes                    |              48 |            8 |
+| Yes          | Yes                   | No                     |             198 |           41 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------------------------------+--------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+|                                   Clock Signal                                   |                            Enable Signal                           |                                    Set/Reset Signal                                    | Slice Load Count | Bel Load Count |
++----------------------------------------------------------------------------------+--------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+| ~clk_6p25_BUFG                                                                   |                                                                    |                                                                                        |                1 |              2 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/LED_reg[1][0]                                |                                                                                        |                1 |              4 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/playerHandValueFunction/kicker3[3]_i_1_n_0   |                                                                                        |                1 |              8 |
+|  poker/nolabel_line196/playerHandValueFunction/highCardStarter_reg_n_0           |                                                                    | poker/nolabel_line196/playerHandValueFunction/highCardFunction/highCard[3]_i_1__2_n_0  |                1 |              8 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/playerHandValueFunction/kicker2[3]_i_1_n_0   |                                                                                        |                1 |              8 |
+|  poker/nolabel_line196/playerHandValueFunction/isFOAKCheckerStarter_reg_n_0      |                                                                    | poker/nolabel_line196/playerHandValueFunction/isFOAKFunction/p_2_out[3]                |                3 |              8 |
+|  poker/nolabel_line196/playerHandValueFunction/isFullHouseCheckerStarter_reg_n_0 |                                                                    | poker/nolabel_line196/playerHandValueFunction/isFullHouseFunction/foundThreeOfAKind1   |                3 |              8 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/oppHandValueFunction/kicker2[3]_i_1_n_0      |                                                                                        |                2 |              8 |
+|  poker/nolabel_line196/oppHandValueFunction/isTOAKCheckerStarter_reg_n_0         |                                                                    | poker/nolabel_line196/oppHandValueFunction/isTOAKFunction/kicker[3]_i_1__8_n_0         |                3 |              8 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/oppHandValueFunction/kicker[3]_i_1_n_0       |                                                                                        |                3 |              8 |
+|  poker/nolabel_line196/playerHandValueFunction/isTOAKCheckerStarter_reg_n_0      |                                                                    | poker/nolabel_line196/playerHandValueFunction/isTOAKFunction/kicker[3]_i_1__7_n_0      |                2 |              8 |
+|  clk_100MHz_IBUF_BUFG                                                            | UART_UNIT/UART_TX_UNIT/tick_next                                   | reset_IBUF                                                                             |                1 |              8 |
+|  poker/nolabel_line196/playerHandValueFunction/isTwoPairCheckerStarter_reg_n_0   |                                                                    | poker/nolabel_line196/playerHandValueFunction/isTwoPairFunction/lowPairCard[3]_i_1_n_0 |                3 |              8 |
+|  poker/nolabel_line196/playerHandValueFunction/isTwoPairCheckerStarter_reg_n_0   |                                                                    | poker/nolabel_line196/playerHandValueFunction/isTwoPairFunction/p_13_out[3]            |                2 |              8 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/oppHandValueFunction/kicker3[3]_i_1_n_0      |                                                                                        |                1 |              8 |
+|  poker/nolabel_line196/oppHandValueFunction/highCardStarter_reg_n_0              |                                                                    | poker/nolabel_line196/oppHandValueFunction/highCardFunction/highCard[3]_i_1__6_n_0     |                1 |              8 |
+|  poker/nolabel_line196/oppHandValueFunction/isTwoPairCheckerStarter_reg_n_0      |                                                                    | poker/nolabel_line196/oppHandValueFunction/isTwoPairFunction/lowPairCard[3]_i_1__0_n_0 |                3 |              8 |
+|  poker/nolabel_line196/oppHandValueFunction/isFOAKCheckerStarter_reg_n_0         |                                                                    | poker/nolabel_line196/oppHandValueFunction/isFOAKFunction/p_2_out[3]                   |                3 |              8 |
+|  poker/nolabel_line196/oppHandValueFunction/isFullHouseCheckerStarter_reg_n_0    |                                                                    | poker/nolabel_line196/oppHandValueFunction/isFullHouseFunction/foundThreeOfAKind1      |                3 |              8 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/playerHandValueFunction/kicker[3]_i_1_n_0    |                                                                                        |                2 |              8 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/playerHandValueFunction/kicker4[3]_i_1_n_0   | poker/nolabel_line196/playerHandValueFunction/i___183_n_0                              |                1 |              8 |
+|  poker/nolabel_line196/oppHandValueFunction/isTwoPairCheckerStarter_reg_n_0      |                                                                    | poker/nolabel_line196/oppHandValueFunction/isTwoPairFunction/p_13_out[3]               |                3 |              8 |
+|  clk_100MHz_IBUF_BUFG                                                            | UART_UNIT/UART_RX_UNIT/tick_next                                   | reset_IBUF                                                                             |                2 |              8 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/oppHandValueFunction/kicker4[3]_i_1_n_0      | poker/nolabel_line196/oppHandValueFunction/i___183_n_0                                 |                1 |              8 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/num_cards_dealt[3]_i_1_n_0                                   |                                                                                        |                4 |              8 |
+|  poker/nolabel_line196/playerHandValueFunction/isFlushCheckerStarter_reg_n_0     |                                                                    |                                                                                        |                3 |             10 |
+|  clk_1k_BUFG                                                                     | gameplay/starting_animation/origin_y[5]_i_2_n_0                    | gameplay/starting_animation/origin_y[5]_i_1_n_0                                        |                2 |             10 |
+|  poker/nolabel_line196/playerHandValueFunction/isStraightCheckerStarter_reg_n_0  |                                                                    | poker/nolabel_line196/playerHandValueFunction/isStraightFunction/isStraight01_out      |                2 |             10 |
+|  poker/nolabel_line196/oppHandValueFunction/isFlushCheckerStarter_reg_n_0        |                                                                    |                                                                                        |                2 |             10 |
+|  poker/nolabel_line196/oppHandValueFunction/isStraightCheckerStarter_reg_n_0     |                                                                    | poker/nolabel_line196/oppHandValueFunction/isStraightFunction/isStraight01_out         |                2 |             10 |
+|  card8_reg[7]_i_2_n_0                                                            | poker/rng/state[4]_i_1_n_0                                         |                                                                                        |                3 |             10 |
+|  clk_1k_BUFG                                                                     |                                                                    |                                                                                        |                3 |             10 |
+|  poker/nolabel_line196/playerHandValueFunction/isStraightFlushCheckerStarter     |                                                                    |                                                                                        |                3 |             12 |
+|  card8_reg[7]_i_2_n_0                                                            |                                                                    |                                                                                        |                5 |             12 |
+|  poker/nolabel_line196/oppHandValueFunction/isStraightFlushCheckerStarter        |                                                                    |                                                                                        |                4 |             12 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/rng/lfsr1/E[0]                                               |                                                                                        |                4 |             12 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/my_raise_value[5]_i_1_n_0                                    |                                                                                        |                3 |             12 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/opponent_raise_value[5]_i_1_n_0                              |                                                                                        |                3 |             12 |
+|  card8_reg[7]_i_2_n_0                                                            | poker/rng/card3[7]_i_1_n_0                                         |                                                                                        |                2 |             14 |
+|  card8_reg[7]_i_2_n_0                                                            | poker/rng/card1[7]_i_1_n_0                                         |                                                                                        |                4 |             14 |
+|  clk_100MHz_IBUF_BUFG                                                            | money/p_0_out                                                      |                                                                                        |                6 |             14 |
+|  card8_reg[7]_i_2_n_0                                                            | poker/rng/card2[7]_i_1_n_0                                         |                                                                                        |                2 |             14 |
+|  card8_reg[7]_i_2_n_0                                                            | poker/rng/card8[7]_i_1_n_0                                         |                                                                                        |                3 |             14 |
+|  card8_reg[7]_i_2_n_0                                                            | poker/rng/card7[7]_i_1_n_0                                         |                                                                                        |                4 |             14 |
+|  card8_reg[7]_i_2_n_0                                                            | poker/rng/card9[7]_i_1_n_0                                         |                                                                                        |                4 |             14 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/hole2[7]_i_2_n_0                                             | poker/hole2[7]_i_1_n_0                                                                 |                5 |             14 |
+|  card8_reg[7]_i_2_n_0                                                            | poker/rng/card4[7]_i_1_n_0                                         |                                                                                        |                4 |             14 |
+|  card8_reg[7]_i_2_n_0                                                            | poker/rng/card6[7]_i_1_n_0                                         |                                                                                        |                6 |             14 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/opp_hole2[7]_i_2_n_0                                         | poker/opp_hole2[7]_i_1_n_0                                                             |                6 |             14 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/opp_hole1[7]_i_2_n_0                                         | poker/opp_hole1[7]_i_1_n_0                                                             |                5 |             14 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/opponent_action_reg[6]_i_1_n_0                               |                                                                                        |                5 |             14 |
+|  card8_reg[7]_i_2_n_0                                                            | poker/rng/card5[7]_i_1_n_0                                         |                                                                                        |                5 |             14 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/hole1[7]_i_2_n_0                                             | poker/hole1[7]_i_1_n_0                                                                 |                6 |             14 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/E[0]                                         |                                                                                        |                8 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/tx_data_reg[0][0]                            |                                                                                        |                7 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/player_current_chips_reg[0][0]               |                                                                                        |                8 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/total_pot_reg[0][0]                          |                                                                                        |                5 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/flop1[7]_i_1_n_0                                             |                                                                                        |                4 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/flop2[7]_i_1_n_0                                             |                                                                                        |                4 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/flop3[7]_i_1_n_0                                             |                                                                                        |                7 |             16 |
+|  poker/nolabel_line196/oppHandValueFunction/isFOAKCheckerStarter_reg_n_0         |                                                                    |                                                                                        |                5 |             16 |
+|  poker/nolabel_line196/oppHandValueFunction/isFullHouseCheckerStarter_reg_n_0    |                                                                    |                                                                                        |                6 |             16 |
+|  poker/nolabel_line196/oppHandValueFunction/isTwoPairCheckerStarter_reg_n_0      |                                                                    |                                                                                        |                6 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/playerHandValueFunction/handValue[7]_i_1_n_0 |                                                                                        |                4 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/oppHandValueFunction/handValue[7]_i_1_n_0    |                                                                                        |                5 |             16 |
+|  poker/nolabel_line196/playerHandValueFunction/isTwoPairCheckerStarter_reg_n_0   |                                                                    |                                                                                        |                6 |             16 |
+|  poker/nolabel_line196/playerHandValueFunction/isFOAKCheckerStarter_reg_n_0      |                                                                    |                                                                                        |                4 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/river[7]_i_1_n_0                                             |                                                                                        |                7 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/turn[7]_i_1_n_0                                              |                                                                                        |                8 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | UART_UNIT/UART_RX_UNIT/data_next                                   | reset_IBUF                                                                             |                2 |             16 |
+|  poker/nolabel_line196/playerHandValueFunction/isFullHouseCheckerStarter_reg_n_0 |                                                                    |                                                                                        |                6 |             16 |
+|  clk_100MHz_IBUF_BUFG                                                            | UART_UNIT/UART_TX_UNIT/data_next_0                                 | reset_IBUF                                                                             |                3 |             16 |
+|  poker/nolabel_line196/oppHandValueFunction/isTOAKCheckerStarter_reg_n_0         |                                                                    |                                                                                        |                8 |             24 |
+|  poker/nolabel_line196/playerHandValueFunction/isTOAKCheckerStarter_reg_n_0      |                                                                    |                                                                                        |                7 |             24 |
+|  poker/nolabel_line196/playerHandValueFunction/highCardStarter_reg_n_0           |                                                                    |                                                                                        |                8 |             32 |
+|  poker/nolabel_line196/oppHandValueFunction/highCardStarter_reg_n_0              |                                                                    |                                                                                        |                9 |             32 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/write_enabled                                                |                                                                                        |                2 |             32 |
+|  clk_100MHz_IBUF_BUFG                                                            | UART_UNIT/UART_RX_UNIT/write_enabled                               |                                                                                        |                2 |             32 |
+| ~clk_6p25_BUFG                                                                   |                                                                    | oled/frame_counter[16]_i_1_n_0                                                         |                5 |             34 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/game_state_reg[3]_rep__0                     |                                                                                        |                9 |             36 |
+|  poker/nolabel_line196/oppHandValueFunction/isPairCheckerStarter_reg_n_0         |                                                                    |                                                                                        |               12 |             40 |
+| ~clk_6p25_BUFG                                                                   | oled/delay[0]_i_1_n_0                                              |                                                                                        |                5 |             40 |
+|  poker/nolabel_line196/playerHandValueFunction/isPairCheckerStarter_reg_n_0      |                                                                    |                                                                                        |               14 |             40 |
+|  clk_1k_BUFG                                                                     | gameplay/starting_animation/origin_y[5]_i_2_n_0                    | gameplay/starting_animation/origin_y[31]_i_1_n_0                                       |                6 |             52 |
+|  clk_100MHz_IBUF_BUFG                                                            |                                                                    | clk1kHz/counter[0]_i_1__2_n_0                                                          |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG                                                            |                                                                    | clk6p25Hz/clear                                                                        |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG                                                            |                                                                    | poker/rng/cc/clk0                                                                      |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG                                                            |                                                                    | gameplay/lose/clk_1Hz/clear                                                            |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG                                                            |                                                                    | gameplay/win/clk_1Hz/clear                                                             |                8 |             64 |
+|  clk_1k_BUFG                                                                     | gameplay/starting_animation/count                                  | gameplay/starting_animation/count[31]_i_1_n_0                                          |                9 |             64 |
+|  clk_1k_BUFG                                                                     |                                                                    | gameplay/starting_animation/count                                                      |                9 |             64 |
+| ~clk_6p25_BUFG                                                                   | oled/state                                                         |                                                                                        |                8 |             64 |
+| ~clk_6p25_BUFG                                                                   |                                                                    | oled/spi_word_bit_count[5]_i_1_n_0                                                     |               18 |             90 |
+|  clk_100MHz_IBUF_BUFG                                                            | poker/nolabel_line196/moduleCall_reg_n_0                           |                                                                                        |               51 |            228 |
+|  clk_100MHz_IBUF_BUFG                                                            |                                                                    |                                                                                        |               79 |            238 |
+|  clk_100MHz_IBUF_BUFG                                                            |                                                                    | reset_IBUF                                                                             |               44 |            258 |
++----------------------------------------------------------------------------------+--------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+
+

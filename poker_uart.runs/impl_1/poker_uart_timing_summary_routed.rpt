@@ -1,0 +1,1881 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr  7 03:08:09 2024
+| Host         : Fred_Laptop running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file poker_uart_timing_summary_routed.rpt -pb poker_uart_timing_summary_routed.pb -rpx poker_uart_timing_summary_routed.rpx -warn_on_violation
+| Design       : poker_uart
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.22 2018-03-21
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 100 register/latch pins with no clock driven by root clock pin: clk1kHz/clk_reg/Q (HIGH)
+
+ There are 115 register/latch pins with no clock driven by root clock pin: clk6p25Hz/clk_reg/Q (HIGH)
+
+ There are 20 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/oppHandValueFunction/highCardStarter_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/oppHandValueFunction/isFOAKCheckerStarter_reg/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/oppHandValueFunction/isFlushCheckerStarter_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/oppHandValueFunction/isFullHouseCheckerStarter_reg/Q (HIGH)
+
+ There are 20 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/oppHandValueFunction/isPairCheckerStarter_reg/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/oppHandValueFunction/isStraightCheckerStarter_reg/Q (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/oppHandValueFunction/isStraightFlushCheckerStarter_reg/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/oppHandValueFunction/isTOAKCheckerStarter_reg/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/oppHandValueFunction/isTwoPairCheckerStarter_reg/Q (HIGH)
+
+ There are 20 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/playerHandValueFunction/highCardStarter_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/playerHandValueFunction/isFOAKCheckerStarter_reg/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/playerHandValueFunction/isFlushCheckerStarter_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/playerHandValueFunction/isFullHouseCheckerStarter_reg/Q (HIGH)
+
+ There are 20 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/playerHandValueFunction/isPairCheckerStarter_reg/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/playerHandValueFunction/isStraightCheckerStarter_reg/Q (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/playerHandValueFunction/isStraightFlushCheckerStarter_reg/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/playerHandValueFunction/isTOAKCheckerStarter_reg/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: poker/nolabel_line196/playerHandValueFunction/isTwoPairCheckerStarter_reg/Q (HIGH)
+
+ There are 74 register/latch pins with no clock driven by root clock pin: poker/rng/cc/clk_reg/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 899 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 13 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 25 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -9.380    -1192.967                    343                 1381        0.084        0.000                      0                 1381        3.750        0.000                       0                   783  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin        -9.380    -1192.967                    343                 1381        0.084        0.000                      0                 1381        3.750        0.000                       0                   783  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :          343  Failing Endpoints,  Worst Slack       -9.380ns,  Total Violation    -1192.967ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.084ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.750ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -9.380ns  (required time - arrival time)
+  Source:                 poker/total_pot_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            gameplay/pot/oled_data_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        19.313ns  (logic 7.768ns (40.221%)  route 11.545ns (59.779%))
+  Logic Levels:           26  (CARRY4=12 LUT1=1 LUT2=1 LUT3=2 LUT4=5 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.849ns = ( 14.849 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.092ns
+    Clock Pessimism Removal (CPR):    0.180ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.571     5.092    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X57Y46         FDRE                                         r  poker/total_pot_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y46         FDRE (Prop_fdre_C_Q)         0.456     5.548 r  poker/total_pot_reg[6]/Q
+                         net (fo=117, routed)         0.833     6.382    poker/opponent_current_chips_reg[6]_0[6]
+    SLICE_X59Y45         LUT3 (Prop_lut3_I2_O)        0.124     6.506 r  poker/oled_data[15]_i_1070/O
+                         net (fo=3, routed)           0.930     7.436    poker/oled_data[15]_i_1070_n_0
+    SLICE_X56Y45         LUT4 (Prop_lut4_I3_O)        0.124     7.560 r  poker/oled_data[15]_i_1479/O
+                         net (fo=1, routed)           0.000     7.560    poker/oled_data[15]_i_1479_n_0
+    SLICE_X56Y45         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     7.936 r  poker/oled_data_reg[15]_i_1412/CO[3]
+                         net (fo=1, routed)           0.000     7.936    poker/oled_data_reg[15]_i_1412_n_0
+    SLICE_X56Y46         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315     8.251 r  poker/oled_data_reg[15]_i_1304/O[3]
+                         net (fo=4, routed)           1.012     9.262    poker/oled_data_reg[15]_i_1304_n_4
+    SLICE_X62Y47         LUT4 (Prop_lut4_I1_O)        0.307     9.569 r  poker/oled_data[15]_i_1292/O
+                         net (fo=2, routed)           0.966    10.535    poker/oled_data[15]_i_1292_n_0
+    SLICE_X58Y45         LUT4 (Prop_lut4_I0_O)        0.124    10.659 r  poker/oled_data[15]_i_1296/O
+                         net (fo=1, routed)           0.000    10.659    poker/oled_data[15]_i_1296_n_0
+    SLICE_X58Y45         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398    11.057 r  poker/oled_data_reg[15]_i_1120/CO[3]
+                         net (fo=1, routed)           0.000    11.057    poker/oled_data_reg[15]_i_1120_n_0
+    SLICE_X58Y46         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.171 r  poker/oled_data_reg[15]_i_902/CO[3]
+                         net (fo=1, routed)           0.000    11.171    poker/oled_data_reg[15]_i_902_n_0
+    SLICE_X58Y47         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.285 r  poker/oled_data_reg[15]_i_724/CO[3]
+                         net (fo=1, routed)           0.000    11.285    poker/oled_data_reg[15]_i_724_n_0
+    SLICE_X58Y48         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    11.619 f  poker/oled_data_reg[15]_i_546/O[1]
+                         net (fo=8, routed)           0.652    12.272    poker_n_478
+    SLICE_X59Y47         LUT2 (Prop_lut2_I1_O)        0.303    12.575 r  oled_data[15]_i_718/O
+                         net (fo=2, routed)           0.722    13.296    oled_data[15]_i_718_n_0
+    SLICE_X57Y47         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.438    13.734 r  oled_data_reg[15]_i_545/O[3]
+                         net (fo=3, routed)           0.588    14.322    oled_data_reg[15]_i_545_n_4
+    SLICE_X57Y45         LUT4 (Prop_lut4_I2_O)        0.306    14.628 r  oled_data[15]_i_702/O
+                         net (fo=1, routed)           0.000    14.628    oled_data[15]_i_702_n_0
+    SLICE_X57Y45         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    15.208 f  oled_data_reg[15]_i_531/O[2]
+                         net (fo=1, routed)           0.581    15.790    oled_data_reg[15]_i_531_n_5
+    SLICE_X54Y47         LUT1 (Prop_lut1_I0_O)        0.302    16.092 r  oled_data[15]_i_382/O
+                         net (fo=1, routed)           0.000    16.092    poker/total_pot_reg[7]_50[1]
+    SLICE_X54Y47         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.578    16.670 f  poker/oled_data_reg[15]_i_221/O[2]
+                         net (fo=18, routed)          0.709    17.378    gameplay/pot/total_pot_reg[7]_0[2]
+    SLICE_X54Y48         LUT3 (Prop_lut3_I0_O)        0.301    17.679 r  gameplay/pot/oled_data[15]_i_343/O
+                         net (fo=7, routed)           0.667    18.346    gameplay/pot/oled_data[15]_i_343_n_0
+    SLICE_X54Y50         LUT5 (Prop_lut5_I3_O)        0.124    18.470 r  gameplay/pot/oled_data[15]_i_247/O
+                         net (fo=1, routed)           0.000    18.470    gameplay/pot/oled_data[15]_i_247_n_0
+    SLICE_X54Y50         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    19.003 r  gameplay/pot/oled_data_reg[15]_i_133/CO[3]
+                         net (fo=1, routed)           0.000    19.003    gameplay/pot/oled_data_reg[15]_i_133_n_0
+    SLICE_X54Y51         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    19.222 r  gameplay/pot/oled_data_reg[15]_i_63/O[0]
+                         net (fo=21, routed)          1.106    20.328    gameplay/pot/O[0]
+    SLICE_X58Y50         LUT4 (Prop_lut4_I0_O)        0.295    20.623 r  gameplay/pot/oled_data[15]_i_201/O
+                         net (fo=2, routed)           0.485    21.108    gameplay/pot/oled_data[15]_i_201_n_0
+    SLICE_X58Y52         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    21.615 r  gameplay/pot/oled_data_reg[15]_i_106/CO[3]
+                         net (fo=9, routed)           0.815    22.429    gameplay/pot/oled_data_reg[15]_i_106_n_0
+    SLICE_X59Y56         LUT6 (Prop_lut6_I5_O)        0.124    22.553 f  gameplay/pot/oled_data[15]_i_47__2/O
+                         net (fo=2, routed)           0.529    23.083    oled/total_pot_reg[7]_1
+    SLICE_X56Y56         LUT6 (Prop_lut6_I0_O)        0.124    23.207 f  oled/oled_data[15]_i_19__18/O
+                         net (fo=1, routed)           0.797    24.003    oled/oled_data[15]_i_19__18_n_0
+    SLICE_X61Y56         LUT6 (Prop_lut6_I2_O)        0.124    24.127 f  oled/oled_data[15]_i_4__17/O
+                         net (fo=1, routed)           0.154    24.281    oled/oled_data[15]_i_4__17_n_0
+    SLICE_X61Y56         LUT6 (Prop_lut6_I2_O)        0.124    24.405 r  oled/oled_data[15]_i_1__18/O
+                         net (fo=1, routed)           0.000    24.405    gameplay/pot/total_pot_reg[6]
+    SLICE_X61Y56         FDRE                                         r  gameplay/pot/oled_data_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000    10.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.508    14.849    gameplay/pot/clk_100MHz_IBUF_BUFG
+    SLICE_X61Y56         FDRE                                         r  gameplay/pot/oled_data_reg[15]/C
+                         clock pessimism              0.180    15.029    
+                         clock uncertainty           -0.035    14.993    
+    SLICE_X61Y56         FDRE (Setup_fdre_C_D)        0.032    15.025    gameplay/pot/oled_data_reg[15]
+  -------------------------------------------------------------------
+                         required time                         15.025    
+                         arrival time                         -24.405    
+  -------------------------------------------------------------------
+                         slack                                 -9.380    
+
+Slack (VIOLATED) :        -9.123ns  (required time - arrival time)
+  Source:                 poker/opp_hole1_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        18.975ns  (logic 3.804ns (20.048%)  route 15.171ns (79.952%))
+  Logic Levels:           27  (LUT3=7 LUT4=2 LUT5=9 LUT6=9)
+  Clock Path Skew:        -0.032ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.940ns = ( 14.940 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.239ns
+    Clock Pessimism Removal (CPR):    0.267ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.718     5.239    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X31Y123        FDRE                                         r  poker/opp_hole1_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y123        FDRE (Prop_fdre_C_Q)         0.456     5.695 r  poker/opp_hole1_reg[1]/Q
+                         net (fo=15, routed)          0.822     6.517    poker/nolabel_line196/oppHandValueFunction/oppHand1[1]
+    SLICE_X30Y123        LUT6 (Prop_lut6_I2_O)        0.124     6.641 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16/O
+                         net (fo=1, routed)           0.162     6.803    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16_n_0
+    SLICE_X30Y123        LUT3 (Prop_lut3_I2_O)        0.124     6.927 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11/O
+                         net (fo=28, routed)          0.354     7.281    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11_n_0
+    SLICE_X28Y123        LUT3 (Prop_lut3_I1_O)        0.124     7.405 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21/O
+                         net (fo=1, routed)           0.159     7.563    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21_n_0
+    SLICE_X28Y123        LUT6 (Prop_lut6_I0_O)        0.124     7.687 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20/O
+                         net (fo=1, routed)           0.444     8.132    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.256 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17/O
+                         net (fo=1, routed)           0.151     8.407    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.531 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12/O
+                         net (fo=22, routed)          0.521     9.052    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12_n_0
+    SLICE_X28Y124        LUT5 (Prop_lut5_I3_O)        0.124     9.176 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4/O
+                         net (fo=5, routed)           0.566     9.742    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4_n_0
+    SLICE_X27Y124        LUT6 (Prop_lut6_I4_O)        0.124     9.866 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14/O
+                         net (fo=1, routed)           0.287    10.153    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14_n_0
+    SLICE_X25Y124        LUT3 (Prop_lut3_I2_O)        0.124    10.277 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6/O
+                         net (fo=18, routed)          0.566    10.843    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    10.967 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10/O
+                         net (fo=3, routed)           0.777    11.744    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10_n_0
+    SLICE_X25Y125        LUT6 (Prop_lut6_I4_O)        0.124    11.868 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0/O
+                         net (fo=1, routed)           0.264    12.133    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0_n_0
+    SLICE_X25Y125        LUT5 (Prop_lut5_I2_O)        0.124    12.257 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0/O
+                         net (fo=12, routed)          0.621    12.878    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    13.002 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7/O
+                         net (fo=3, routed)           0.722    13.724    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7_n_0
+    SLICE_X25Y127        LUT6 (Prop_lut6_I5_O)        0.124    13.848 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0/O
+                         net (fo=8, routed)           0.691    14.539    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0_n_0
+    SLICE_X25Y127        LUT5 (Prop_lut5_I3_O)        0.124    14.663 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4/O
+                         net (fo=3, routed)           0.815    15.478    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4_n_0
+    SLICE_X26Y128        LUT6 (Prop_lut6_I2_O)        0.124    15.602 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5/O
+                         net (fo=5, routed)           0.586    16.188    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5_n_0
+    SLICE_X24Y129        LUT4 (Prop_lut4_I3_O)        0.124    16.312 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0/O
+                         net (fo=8, routed)           0.603    16.915    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0_n_0
+    SLICE_X23Y129        LUT4 (Prop_lut4_I3_O)        0.124    17.039 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0/O
+                         net (fo=9, routed)           0.785    17.824    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0_n_0
+    SLICE_X23Y128        LUT5 (Prop_lut5_I1_O)        0.124    17.948 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6/O
+                         net (fo=3, routed)           0.866    18.814    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6_n_0
+    SLICE_X23Y128        LUT6 (Prop_lut6_I3_O)        0.124    18.938 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5/O
+                         net (fo=5, routed)           0.668    19.606    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5_n_0
+    SLICE_X22Y127        LUT5 (Prop_lut5_I3_O)        0.124    19.730 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_2/O
+                         net (fo=4, routed)           0.730    20.460    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_2_n_0
+    SLICE_X21Y128        LUT6 (Prop_lut6_I2_O)        0.124    20.584 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_7/O
+                         net (fo=3, routed)           0.590    21.174    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_7_n_0
+    SLICE_X21Y128        LUT3 (Prop_lut3_I2_O)        0.124    21.298 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_3/O
+                         net (fo=16, routed)          0.551    21.849    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_3_n_0
+    SLICE_X20Y128        LUT3 (Prop_lut3_I1_O)        0.124    21.973 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_3/O
+                         net (fo=6, routed)           0.752    22.725    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_3_n_0
+    SLICE_X18Y126        LUT5 (Prop_lut5_I1_O)        0.124    22.849 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_2/O
+                         net (fo=3, routed)           0.429    23.278    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_2_n_0
+    SLICE_X19Y127        LUT6 (Prop_lut6_I3_O)        0.124    23.402 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_5/O
+                         net (fo=8, routed)           0.356    23.758    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_5_n_0
+    SLICE_X18Y126        LUT5 (Prop_lut5_I3_O)        0.124    23.882 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[1][1]_i_1/O
+                         net (fo=1, routed)           0.332    24.214    poker/nolabel_line196/oppHandValueFunction/sorted_cards[1][1]_i_1_n_0
+    SLICE_X18Y126        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000    10.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.599    14.940    poker/nolabel_line196/oppHandValueFunction/clk_100MHz_IBUF_BUFG
+    SLICE_X18Y126        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][1]/C
+                         clock pessimism              0.267    15.207    
+                         clock uncertainty           -0.035    15.172    
+    SLICE_X18Y126        FDRE (Setup_fdre_C_D)       -0.081    15.091    poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][1]
+  -------------------------------------------------------------------
+                         required time                         15.091    
+                         arrival time                         -24.214    
+  -------------------------------------------------------------------
+                         slack                                 -9.123    
+
+Slack (VIOLATED) :        -9.074ns  (required time - arrival time)
+  Source:                 poker/opp_hole1_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[0][1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        18.962ns  (logic 3.804ns (20.061%)  route 15.158ns (79.939%))
+  Logic Levels:           27  (LUT3=7 LUT4=2 LUT5=9 LUT6=9)
+  Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.943ns = ( 14.943 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.239ns
+    Clock Pessimism Removal (CPR):    0.267ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.718     5.239    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X31Y123        FDRE                                         r  poker/opp_hole1_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y123        FDRE (Prop_fdre_C_Q)         0.456     5.695 r  poker/opp_hole1_reg[1]/Q
+                         net (fo=15, routed)          0.822     6.517    poker/nolabel_line196/oppHandValueFunction/oppHand1[1]
+    SLICE_X30Y123        LUT6 (Prop_lut6_I2_O)        0.124     6.641 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16/O
+                         net (fo=1, routed)           0.162     6.803    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16_n_0
+    SLICE_X30Y123        LUT3 (Prop_lut3_I2_O)        0.124     6.927 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11/O
+                         net (fo=28, routed)          0.354     7.281    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11_n_0
+    SLICE_X28Y123        LUT3 (Prop_lut3_I1_O)        0.124     7.405 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21/O
+                         net (fo=1, routed)           0.159     7.563    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21_n_0
+    SLICE_X28Y123        LUT6 (Prop_lut6_I0_O)        0.124     7.687 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20/O
+                         net (fo=1, routed)           0.444     8.132    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.256 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17/O
+                         net (fo=1, routed)           0.151     8.407    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.531 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12/O
+                         net (fo=22, routed)          0.521     9.052    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12_n_0
+    SLICE_X28Y124        LUT5 (Prop_lut5_I3_O)        0.124     9.176 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4/O
+                         net (fo=5, routed)           0.566     9.742    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4_n_0
+    SLICE_X27Y124        LUT6 (Prop_lut6_I4_O)        0.124     9.866 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14/O
+                         net (fo=1, routed)           0.287    10.153    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14_n_0
+    SLICE_X25Y124        LUT3 (Prop_lut3_I2_O)        0.124    10.277 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6/O
+                         net (fo=18, routed)          0.566    10.843    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    10.967 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10/O
+                         net (fo=3, routed)           0.777    11.744    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10_n_0
+    SLICE_X25Y125        LUT6 (Prop_lut6_I4_O)        0.124    11.868 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0/O
+                         net (fo=1, routed)           0.264    12.133    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0_n_0
+    SLICE_X25Y125        LUT5 (Prop_lut5_I2_O)        0.124    12.257 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0/O
+                         net (fo=12, routed)          0.621    12.878    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    13.002 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7/O
+                         net (fo=3, routed)           0.722    13.724    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7_n_0
+    SLICE_X25Y127        LUT6 (Prop_lut6_I5_O)        0.124    13.848 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0/O
+                         net (fo=8, routed)           0.691    14.539    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0_n_0
+    SLICE_X25Y127        LUT5 (Prop_lut5_I3_O)        0.124    14.663 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4/O
+                         net (fo=3, routed)           0.815    15.478    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4_n_0
+    SLICE_X26Y128        LUT6 (Prop_lut6_I2_O)        0.124    15.602 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5/O
+                         net (fo=5, routed)           0.586    16.188    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5_n_0
+    SLICE_X24Y129        LUT4 (Prop_lut4_I3_O)        0.124    16.312 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0/O
+                         net (fo=8, routed)           0.603    16.915    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0_n_0
+    SLICE_X23Y129        LUT4 (Prop_lut4_I3_O)        0.124    17.039 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0/O
+                         net (fo=9, routed)           0.785    17.824    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0_n_0
+    SLICE_X23Y128        LUT5 (Prop_lut5_I1_O)        0.124    17.948 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6/O
+                         net (fo=3, routed)           0.866    18.814    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6_n_0
+    SLICE_X23Y128        LUT6 (Prop_lut6_I3_O)        0.124    18.938 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5/O
+                         net (fo=5, routed)           0.668    19.606    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5_n_0
+    SLICE_X22Y127        LUT5 (Prop_lut5_I3_O)        0.124    19.730 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_2/O
+                         net (fo=4, routed)           0.730    20.460    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_2_n_0
+    SLICE_X21Y128        LUT6 (Prop_lut6_I2_O)        0.124    20.584 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_7/O
+                         net (fo=3, routed)           0.590    21.174    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_7_n_0
+    SLICE_X21Y128        LUT3 (Prop_lut3_I2_O)        0.124    21.298 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_3/O
+                         net (fo=16, routed)          0.551    21.849    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_3_n_0
+    SLICE_X20Y128        LUT3 (Prop_lut3_I1_O)        0.124    21.973 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_3/O
+                         net (fo=6, routed)           0.752    22.725    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_3_n_0
+    SLICE_X18Y126        LUT5 (Prop_lut5_I1_O)        0.124    22.849 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_2/O
+                         net (fo=3, routed)           0.429    23.278    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_2_n_0
+    SLICE_X19Y127        LUT6 (Prop_lut6_I3_O)        0.124    23.402 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_5/O
+                         net (fo=8, routed)           0.336    23.737    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_5_n_0
+    SLICE_X19Y128        LUT5 (Prop_lut5_I3_O)        0.124    23.861 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_1/O
+                         net (fo=1, routed)           0.340    24.202    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_1_n_0
+    SLICE_X19Y128        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000    10.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.602    14.943    poker/nolabel_line196/oppHandValueFunction/clk_100MHz_IBUF_BUFG
+    SLICE_X19Y128        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[0][1]/C
+                         clock pessimism              0.267    15.210    
+                         clock uncertainty           -0.035    15.175    
+    SLICE_X19Y128        FDRE (Setup_fdre_C_D)       -0.047    15.128    poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[0][1]
+  -------------------------------------------------------------------
+                         required time                         15.128    
+                         arrival time                         -24.202    
+  -------------------------------------------------------------------
+                         slack                                 -9.074    
+
+Slack (VIOLATED) :        -8.978ns  (required time - arrival time)
+  Source:                 poker/opp_hole1_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][5]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        18.940ns  (logic 4.032ns (21.289%)  route 14.908ns (78.711%))
+  Logic Levels:           27  (LUT3=8 LUT4=2 LUT5=9 LUT6=8)
+  Clock Path Skew:        -0.032ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.940ns = ( 14.940 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.239ns
+    Clock Pessimism Removal (CPR):    0.267ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.718     5.239    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X31Y123        FDRE                                         r  poker/opp_hole1_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y123        FDRE (Prop_fdre_C_Q)         0.456     5.695 r  poker/opp_hole1_reg[1]/Q
+                         net (fo=15, routed)          0.822     6.517    poker/nolabel_line196/oppHandValueFunction/oppHand1[1]
+    SLICE_X30Y123        LUT6 (Prop_lut6_I2_O)        0.124     6.641 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16/O
+                         net (fo=1, routed)           0.162     6.803    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16_n_0
+    SLICE_X30Y123        LUT3 (Prop_lut3_I2_O)        0.124     6.927 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11/O
+                         net (fo=28, routed)          0.354     7.281    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11_n_0
+    SLICE_X28Y123        LUT3 (Prop_lut3_I1_O)        0.124     7.405 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21/O
+                         net (fo=1, routed)           0.159     7.563    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21_n_0
+    SLICE_X28Y123        LUT6 (Prop_lut6_I0_O)        0.124     7.687 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20/O
+                         net (fo=1, routed)           0.444     8.132    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.256 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17/O
+                         net (fo=1, routed)           0.151     8.407    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.531 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12/O
+                         net (fo=22, routed)          0.521     9.052    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12_n_0
+    SLICE_X28Y124        LUT5 (Prop_lut5_I3_O)        0.124     9.176 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4/O
+                         net (fo=5, routed)           0.566     9.742    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4_n_0
+    SLICE_X27Y124        LUT6 (Prop_lut6_I4_O)        0.124     9.866 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14/O
+                         net (fo=1, routed)           0.287    10.153    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14_n_0
+    SLICE_X25Y124        LUT3 (Prop_lut3_I2_O)        0.124    10.277 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6/O
+                         net (fo=18, routed)          0.566    10.843    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    10.967 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10/O
+                         net (fo=3, routed)           0.777    11.744    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10_n_0
+    SLICE_X25Y125        LUT6 (Prop_lut6_I4_O)        0.124    11.868 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0/O
+                         net (fo=1, routed)           0.264    12.133    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0_n_0
+    SLICE_X25Y125        LUT5 (Prop_lut5_I2_O)        0.124    12.257 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0/O
+                         net (fo=12, routed)          0.621    12.878    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    13.002 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7/O
+                         net (fo=3, routed)           0.722    13.724    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7_n_0
+    SLICE_X25Y127        LUT6 (Prop_lut6_I5_O)        0.124    13.848 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0/O
+                         net (fo=8, routed)           0.691    14.539    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0_n_0
+    SLICE_X25Y127        LUT5 (Prop_lut5_I3_O)        0.124    14.663 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4/O
+                         net (fo=3, routed)           0.815    15.478    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4_n_0
+    SLICE_X26Y128        LUT6 (Prop_lut6_I2_O)        0.124    15.602 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5/O
+                         net (fo=5, routed)           0.586    16.188    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5_n_0
+    SLICE_X24Y129        LUT4 (Prop_lut4_I3_O)        0.124    16.312 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0/O
+                         net (fo=8, routed)           0.603    16.915    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0_n_0
+    SLICE_X23Y129        LUT4 (Prop_lut4_I3_O)        0.124    17.039 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0/O
+                         net (fo=9, routed)           0.785    17.824    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0_n_0
+    SLICE_X23Y128        LUT5 (Prop_lut5_I1_O)        0.124    17.948 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6/O
+                         net (fo=3, routed)           0.866    18.814    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6_n_0
+    SLICE_X23Y128        LUT6 (Prop_lut6_I3_O)        0.124    18.938 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5/O
+                         net (fo=5, routed)           0.668    19.606    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5_n_0
+    SLICE_X22Y127        LUT5 (Prop_lut5_I3_O)        0.150    19.756 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_5/O
+                         net (fo=3, routed)           0.593    20.349    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_5_n_0
+    SLICE_X21Y127        LUT6 (Prop_lut6_I3_O)        0.326    20.675 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][1]_i_4/O
+                         net (fo=3, routed)           0.311    20.986    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][1]_i_4_n_0
+    SLICE_X20Y128        LUT3 (Prop_lut3_I2_O)        0.124    21.110 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_8/O
+                         net (fo=9, routed)           0.552    21.662    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_8_n_0
+    SLICE_X19Y128        LUT3 (Prop_lut3_I1_O)        0.124    21.786 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_2/O
+                         net (fo=6, routed)           0.811    22.597    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_2_n_0
+    SLICE_X18Y127        LUT3 (Prop_lut3_I1_O)        0.124    22.721 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_6/O
+                         net (fo=9, routed)           0.486    23.207    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_6_n_0
+    SLICE_X18Y128        LUT5 (Prop_lut5_I3_O)        0.124    23.331 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_2__0/O
+                         net (fo=2, routed)           0.724    24.055    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_2__0_n_0
+    SLICE_X19Y126        LUT5 (Prop_lut5_I4_O)        0.124    24.179 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[1][5]_i_1/O
+                         net (fo=1, routed)           0.000    24.179    poker/nolabel_line196/oppHandValueFunction/sorted_cards[1][5]_i_1_n_0
+    SLICE_X19Y126        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000    10.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.599    14.940    poker/nolabel_line196/oppHandValueFunction/clk_100MHz_IBUF_BUFG
+    SLICE_X19Y126        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][5]/C
+                         clock pessimism              0.267    15.207    
+                         clock uncertainty           -0.035    15.172    
+    SLICE_X19Y126        FDRE (Setup_fdre_C_D)        0.029    15.201    poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][5]
+  -------------------------------------------------------------------
+                         required time                         15.201    
+                         arrival time                         -24.179    
+  -------------------------------------------------------------------
+                         slack                                 -8.978    
+
+Slack (VIOLATED) :        -8.964ns  (required time - arrival time)
+  Source:                 poker/opp_hole1_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[0][5]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        18.925ns  (logic 3.804ns (20.100%)  route 15.121ns (79.900%))
+  Logic Levels:           27  (LUT3=7 LUT4=2 LUT5=9 LUT6=9)
+  Clock Path Skew:        -0.032ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.940ns = ( 14.940 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.239ns
+    Clock Pessimism Removal (CPR):    0.267ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.718     5.239    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X31Y123        FDRE                                         r  poker/opp_hole1_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y123        FDRE (Prop_fdre_C_Q)         0.456     5.695 r  poker/opp_hole1_reg[1]/Q
+                         net (fo=15, routed)          0.822     6.517    poker/nolabel_line196/oppHandValueFunction/oppHand1[1]
+    SLICE_X30Y123        LUT6 (Prop_lut6_I2_O)        0.124     6.641 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16/O
+                         net (fo=1, routed)           0.162     6.803    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16_n_0
+    SLICE_X30Y123        LUT3 (Prop_lut3_I2_O)        0.124     6.927 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11/O
+                         net (fo=28, routed)          0.354     7.281    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11_n_0
+    SLICE_X28Y123        LUT3 (Prop_lut3_I1_O)        0.124     7.405 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21/O
+                         net (fo=1, routed)           0.159     7.563    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21_n_0
+    SLICE_X28Y123        LUT6 (Prop_lut6_I0_O)        0.124     7.687 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20/O
+                         net (fo=1, routed)           0.444     8.132    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.256 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17/O
+                         net (fo=1, routed)           0.151     8.407    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.531 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12/O
+                         net (fo=22, routed)          0.521     9.052    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12_n_0
+    SLICE_X28Y124        LUT5 (Prop_lut5_I3_O)        0.124     9.176 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4/O
+                         net (fo=5, routed)           0.566     9.742    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4_n_0
+    SLICE_X27Y124        LUT6 (Prop_lut6_I4_O)        0.124     9.866 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14/O
+                         net (fo=1, routed)           0.287    10.153    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14_n_0
+    SLICE_X25Y124        LUT3 (Prop_lut3_I2_O)        0.124    10.277 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6/O
+                         net (fo=18, routed)          0.566    10.843    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    10.967 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10/O
+                         net (fo=3, routed)           0.777    11.744    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10_n_0
+    SLICE_X25Y125        LUT6 (Prop_lut6_I4_O)        0.124    11.868 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0/O
+                         net (fo=1, routed)           0.264    12.133    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0_n_0
+    SLICE_X25Y125        LUT5 (Prop_lut5_I2_O)        0.124    12.257 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0/O
+                         net (fo=12, routed)          0.621    12.878    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    13.002 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7/O
+                         net (fo=3, routed)           0.722    13.724    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7_n_0
+    SLICE_X25Y127        LUT6 (Prop_lut6_I5_O)        0.124    13.848 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0/O
+                         net (fo=8, routed)           0.691    14.539    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0_n_0
+    SLICE_X25Y127        LUT5 (Prop_lut5_I3_O)        0.124    14.663 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4/O
+                         net (fo=3, routed)           0.815    15.478    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4_n_0
+    SLICE_X26Y128        LUT6 (Prop_lut6_I2_O)        0.124    15.602 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5/O
+                         net (fo=5, routed)           0.586    16.188    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5_n_0
+    SLICE_X24Y129        LUT4 (Prop_lut4_I3_O)        0.124    16.312 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0/O
+                         net (fo=8, routed)           0.603    16.915    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0_n_0
+    SLICE_X23Y129        LUT4 (Prop_lut4_I3_O)        0.124    17.039 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0/O
+                         net (fo=9, routed)           0.785    17.824    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0_n_0
+    SLICE_X23Y128        LUT5 (Prop_lut5_I1_O)        0.124    17.948 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6/O
+                         net (fo=3, routed)           0.866    18.814    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6_n_0
+    SLICE_X23Y128        LUT6 (Prop_lut6_I3_O)        0.124    18.938 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5/O
+                         net (fo=5, routed)           0.668    19.606    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5_n_0
+    SLICE_X22Y127        LUT5 (Prop_lut5_I3_O)        0.124    19.730 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_2/O
+                         net (fo=4, routed)           0.730    20.460    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_2_n_0
+    SLICE_X21Y128        LUT6 (Prop_lut6_I2_O)        0.124    20.584 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_7/O
+                         net (fo=3, routed)           0.590    21.174    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_7_n_0
+    SLICE_X21Y128        LUT3 (Prop_lut3_I2_O)        0.124    21.298 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_3/O
+                         net (fo=16, routed)          0.551    21.849    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_3_n_0
+    SLICE_X20Y128        LUT3 (Prop_lut3_I1_O)        0.124    21.973 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_3/O
+                         net (fo=6, routed)           0.752    22.725    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_3_n_0
+    SLICE_X18Y126        LUT5 (Prop_lut5_I1_O)        0.124    22.849 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_2/O
+                         net (fo=3, routed)           0.429    23.278    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_2_n_0
+    SLICE_X19Y127        LUT6 (Prop_lut6_I3_O)        0.124    23.402 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_5/O
+                         net (fo=8, routed)           0.639    24.041    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_5_n_0
+    SLICE_X18Y126        LUT5 (Prop_lut5_I3_O)        0.124    24.165 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_1/O
+                         net (fo=1, routed)           0.000    24.165    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_1_n_0
+    SLICE_X18Y126        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[0][5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000    10.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.599    14.940    poker/nolabel_line196/oppHandValueFunction/clk_100MHz_IBUF_BUFG
+    SLICE_X18Y126        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[0][5]/C
+                         clock pessimism              0.267    15.207    
+                         clock uncertainty           -0.035    15.172    
+    SLICE_X18Y126        FDRE (Setup_fdre_C_D)        0.029    15.201    poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[0][5]
+  -------------------------------------------------------------------
+                         required time                         15.201    
+                         arrival time                         -24.165    
+  -------------------------------------------------------------------
+                         slack                                 -8.964    
+
+Slack (VIOLATED) :        -8.913ns  (required time - arrival time)
+  Source:                 poker/opp_hole1_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][0]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        18.922ns  (logic 3.800ns (20.083%)  route 15.122ns (79.917%))
+  Logic Levels:           27  (LUT3=7 LUT4=2 LUT5=9 LUT6=9)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.941ns = ( 14.941 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.239ns
+    Clock Pessimism Removal (CPR):    0.267ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.718     5.239    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X31Y123        FDRE                                         r  poker/opp_hole1_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y123        FDRE (Prop_fdre_C_Q)         0.456     5.695 r  poker/opp_hole1_reg[1]/Q
+                         net (fo=15, routed)          0.822     6.517    poker/nolabel_line196/oppHandValueFunction/oppHand1[1]
+    SLICE_X30Y123        LUT6 (Prop_lut6_I2_O)        0.124     6.641 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16/O
+                         net (fo=1, routed)           0.162     6.803    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16_n_0
+    SLICE_X30Y123        LUT3 (Prop_lut3_I2_O)        0.124     6.927 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11/O
+                         net (fo=28, routed)          0.354     7.281    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11_n_0
+    SLICE_X28Y123        LUT3 (Prop_lut3_I1_O)        0.124     7.405 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21/O
+                         net (fo=1, routed)           0.159     7.563    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21_n_0
+    SLICE_X28Y123        LUT6 (Prop_lut6_I0_O)        0.124     7.687 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20/O
+                         net (fo=1, routed)           0.444     8.132    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.256 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17/O
+                         net (fo=1, routed)           0.151     8.407    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.531 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12/O
+                         net (fo=22, routed)          0.521     9.052    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12_n_0
+    SLICE_X28Y124        LUT5 (Prop_lut5_I3_O)        0.124     9.176 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4/O
+                         net (fo=5, routed)           0.566     9.742    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4_n_0
+    SLICE_X27Y124        LUT6 (Prop_lut6_I4_O)        0.124     9.866 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14/O
+                         net (fo=1, routed)           0.287    10.153    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14_n_0
+    SLICE_X25Y124        LUT3 (Prop_lut3_I2_O)        0.124    10.277 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6/O
+                         net (fo=18, routed)          0.566    10.843    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    10.967 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10/O
+                         net (fo=3, routed)           0.777    11.744    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10_n_0
+    SLICE_X25Y125        LUT6 (Prop_lut6_I4_O)        0.124    11.868 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0/O
+                         net (fo=1, routed)           0.264    12.133    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0_n_0
+    SLICE_X25Y125        LUT5 (Prop_lut5_I2_O)        0.124    12.257 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0/O
+                         net (fo=12, routed)          0.621    12.878    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    13.002 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7/O
+                         net (fo=3, routed)           0.722    13.724    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7_n_0
+    SLICE_X25Y127        LUT6 (Prop_lut6_I5_O)        0.124    13.848 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0/O
+                         net (fo=8, routed)           0.691    14.539    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0_n_0
+    SLICE_X25Y127        LUT5 (Prop_lut5_I3_O)        0.124    14.663 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4/O
+                         net (fo=3, routed)           0.815    15.478    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4_n_0
+    SLICE_X26Y128        LUT6 (Prop_lut6_I2_O)        0.124    15.602 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5/O
+                         net (fo=5, routed)           0.586    16.188    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5_n_0
+    SLICE_X24Y129        LUT4 (Prop_lut4_I3_O)        0.124    16.312 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0/O
+                         net (fo=8, routed)           0.603    16.915    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0_n_0
+    SLICE_X23Y129        LUT4 (Prop_lut4_I3_O)        0.124    17.039 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0/O
+                         net (fo=9, routed)           0.785    17.824    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0_n_0
+    SLICE_X23Y128        LUT5 (Prop_lut5_I1_O)        0.124    17.948 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6/O
+                         net (fo=3, routed)           0.866    18.814    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6_n_0
+    SLICE_X23Y128        LUT6 (Prop_lut6_I3_O)        0.124    18.938 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5/O
+                         net (fo=5, routed)           0.668    19.606    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5_n_0
+    SLICE_X22Y127        LUT5 (Prop_lut5_I3_O)        0.124    19.730 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_2/O
+                         net (fo=4, routed)           0.730    20.460    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_2_n_0
+    SLICE_X21Y128        LUT6 (Prop_lut6_I2_O)        0.124    20.584 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_7/O
+                         net (fo=3, routed)           0.590    21.174    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_7_n_0
+    SLICE_X21Y128        LUT3 (Prop_lut3_I2_O)        0.124    21.298 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_3/O
+                         net (fo=16, routed)          0.551    21.849    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_3_n_0
+    SLICE_X20Y128        LUT3 (Prop_lut3_I1_O)        0.124    21.973 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_3/O
+                         net (fo=6, routed)           0.752    22.725    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_3_n_0
+    SLICE_X18Y126        LUT5 (Prop_lut5_I1_O)        0.124    22.849 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_2/O
+                         net (fo=3, routed)           0.429    23.278    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_2_n_0
+    SLICE_X19Y127        LUT6 (Prop_lut6_I3_O)        0.124    23.402 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_5/O
+                         net (fo=8, routed)           0.639    24.041    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_5_n_0
+    SLICE_X19Y127        LUT5 (Prop_lut5_I3_O)        0.120    24.161 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[1][0]_i_1/O
+                         net (fo=1, routed)           0.000    24.161    poker/nolabel_line196/oppHandValueFunction/sorted_cards[1][0]_i_1_n_0
+    SLICE_X19Y127        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000    10.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.600    14.941    poker/nolabel_line196/oppHandValueFunction/clk_100MHz_IBUF_BUFG
+    SLICE_X19Y127        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][0]/C
+                         clock pessimism              0.267    15.208    
+                         clock uncertainty           -0.035    15.173    
+    SLICE_X19Y127        FDRE (Setup_fdre_C_D)        0.075    15.248    poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][0]
+  -------------------------------------------------------------------
+                         required time                         15.248    
+                         arrival time                         -24.161    
+  -------------------------------------------------------------------
+                         slack                                 -8.913    
+
+Slack (VIOLATED) :        -8.904ns  (required time - arrival time)
+  Source:                 poker/opp_hole1_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        18.780ns  (logic 4.032ns (21.470%)  route 14.748ns (78.530%))
+  Logic Levels:           27  (LUT2=1 LUT3=9 LUT4=2 LUT5=7 LUT6=8)
+  Clock Path Skew:        -0.028ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.944ns = ( 14.944 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.239ns
+    Clock Pessimism Removal (CPR):    0.267ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.718     5.239    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X31Y123        FDRE                                         r  poker/opp_hole1_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y123        FDRE (Prop_fdre_C_Q)         0.456     5.695 r  poker/opp_hole1_reg[1]/Q
+                         net (fo=15, routed)          0.822     6.517    poker/nolabel_line196/oppHandValueFunction/oppHand1[1]
+    SLICE_X30Y123        LUT6 (Prop_lut6_I2_O)        0.124     6.641 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16/O
+                         net (fo=1, routed)           0.162     6.803    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16_n_0
+    SLICE_X30Y123        LUT3 (Prop_lut3_I2_O)        0.124     6.927 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11/O
+                         net (fo=28, routed)          0.354     7.281    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11_n_0
+    SLICE_X28Y123        LUT3 (Prop_lut3_I1_O)        0.124     7.405 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21/O
+                         net (fo=1, routed)           0.159     7.563    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21_n_0
+    SLICE_X28Y123        LUT6 (Prop_lut6_I0_O)        0.124     7.687 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20/O
+                         net (fo=1, routed)           0.444     8.132    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.256 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17/O
+                         net (fo=1, routed)           0.151     8.407    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.531 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12/O
+                         net (fo=22, routed)          0.521     9.052    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12_n_0
+    SLICE_X28Y124        LUT5 (Prop_lut5_I3_O)        0.124     9.176 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4/O
+                         net (fo=5, routed)           0.566     9.742    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4_n_0
+    SLICE_X27Y124        LUT6 (Prop_lut6_I4_O)        0.124     9.866 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14/O
+                         net (fo=1, routed)           0.287    10.153    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14_n_0
+    SLICE_X25Y124        LUT3 (Prop_lut3_I2_O)        0.124    10.277 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6/O
+                         net (fo=18, routed)          0.566    10.843    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    10.967 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10/O
+                         net (fo=3, routed)           0.777    11.744    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10_n_0
+    SLICE_X25Y125        LUT6 (Prop_lut6_I4_O)        0.124    11.868 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0/O
+                         net (fo=1, routed)           0.264    12.133    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0_n_0
+    SLICE_X25Y125        LUT5 (Prop_lut5_I2_O)        0.124    12.257 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0/O
+                         net (fo=12, routed)          0.621    12.878    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    13.002 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7/O
+                         net (fo=3, routed)           0.722    13.724    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7_n_0
+    SLICE_X25Y127        LUT6 (Prop_lut6_I5_O)        0.124    13.848 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0/O
+                         net (fo=8, routed)           0.691    14.539    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0_n_0
+    SLICE_X25Y127        LUT5 (Prop_lut5_I3_O)        0.124    14.663 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4/O
+                         net (fo=3, routed)           0.815    15.478    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4_n_0
+    SLICE_X26Y128        LUT6 (Prop_lut6_I2_O)        0.124    15.602 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5/O
+                         net (fo=5, routed)           0.586    16.188    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5_n_0
+    SLICE_X24Y129        LUT4 (Prop_lut4_I3_O)        0.124    16.312 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0/O
+                         net (fo=8, routed)           0.603    16.915    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0_n_0
+    SLICE_X23Y129        LUT4 (Prop_lut4_I3_O)        0.124    17.039 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0/O
+                         net (fo=9, routed)           0.785    17.824    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0_n_0
+    SLICE_X23Y128        LUT5 (Prop_lut5_I1_O)        0.124    17.948 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6/O
+                         net (fo=3, routed)           0.866    18.814    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6_n_0
+    SLICE_X23Y128        LUT6 (Prop_lut6_I3_O)        0.124    18.938 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5/O
+                         net (fo=5, routed)           0.668    19.606    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5_n_0
+    SLICE_X22Y127        LUT5 (Prop_lut5_I3_O)        0.150    19.756 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_5/O
+                         net (fo=3, routed)           0.593    20.349    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_5_n_0
+    SLICE_X21Y127        LUT6 (Prop_lut6_I3_O)        0.326    20.675 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][1]_i_4/O
+                         net (fo=3, routed)           0.311    20.986    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][1]_i_4_n_0
+    SLICE_X20Y128        LUT3 (Prop_lut3_I2_O)        0.124    21.110 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_8/O
+                         net (fo=9, routed)           0.552    21.662    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_8_n_0
+    SLICE_X19Y128        LUT3 (Prop_lut3_I1_O)        0.124    21.786 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_2/O
+                         net (fo=6, routed)           0.811    22.597    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_2_n_0
+    SLICE_X18Y127        LUT3 (Prop_lut3_I1_O)        0.124    22.721 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_6/O
+                         net (fo=9, routed)           0.219    22.940    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_6_n_0
+    SLICE_X18Y127        LUT3 (Prop_lut3_I1_O)        0.124    23.064 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_3/O
+                         net (fo=12, routed)          0.452    23.516    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_3_n_0
+    SLICE_X19Y129        LUT2 (Prop_lut2_I0_O)        0.124    23.640 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[1][3]_i_1/O
+                         net (fo=1, routed)           0.379    24.019    poker/nolabel_line196/oppHandValueFunction/sorted_cards[1][3]_i_1_n_0
+    SLICE_X19Y129        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000    10.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.603    14.944    poker/nolabel_line196/oppHandValueFunction/clk_100MHz_IBUF_BUFG
+    SLICE_X19Y129        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][3]/C
+                         clock pessimism              0.267    15.211    
+                         clock uncertainty           -0.035    15.176    
+    SLICE_X19Y129        FDRE (Setup_fdre_C_D)       -0.061    15.115    poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][3]
+  -------------------------------------------------------------------
+                         required time                         15.115    
+                         arrival time                         -24.019    
+  -------------------------------------------------------------------
+                         slack                                 -8.904    
+
+Slack (VIOLATED) :        -8.900ns  (required time - arrival time)
+  Source:                 poker/opp_hole1_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        18.864ns  (logic 3.804ns (20.165%)  route 15.060ns (79.835%))
+  Logic Levels:           27  (LUT3=7 LUT4=2 LUT5=9 LUT6=9)
+  Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.943ns = ( 14.943 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.239ns
+    Clock Pessimism Removal (CPR):    0.267ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.718     5.239    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X31Y123        FDRE                                         r  poker/opp_hole1_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y123        FDRE (Prop_fdre_C_Q)         0.456     5.695 r  poker/opp_hole1_reg[1]/Q
+                         net (fo=15, routed)          0.822     6.517    poker/nolabel_line196/oppHandValueFunction/oppHand1[1]
+    SLICE_X30Y123        LUT6 (Prop_lut6_I2_O)        0.124     6.641 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16/O
+                         net (fo=1, routed)           0.162     6.803    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_16_n_0
+    SLICE_X30Y123        LUT3 (Prop_lut3_I2_O)        0.124     6.927 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11/O
+                         net (fo=28, routed)          0.354     7.281    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_11_n_0
+    SLICE_X28Y123        LUT3 (Prop_lut3_I1_O)        0.124     7.405 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21/O
+                         net (fo=1, routed)           0.159     7.563    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_21_n_0
+    SLICE_X28Y123        LUT6 (Prop_lut6_I0_O)        0.124     7.687 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20/O
+                         net (fo=1, routed)           0.444     8.132    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_20_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.256 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17/O
+                         net (fo=1, routed)           0.151     8.407    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_17_n_0
+    SLICE_X27Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.531 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12/O
+                         net (fo=22, routed)          0.521     9.052    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_12_n_0
+    SLICE_X28Y124        LUT5 (Prop_lut5_I3_O)        0.124     9.176 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4/O
+                         net (fo=5, routed)           0.566     9.742    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][0]_i_4_n_0
+    SLICE_X27Y124        LUT6 (Prop_lut6_I4_O)        0.124     9.866 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14/O
+                         net (fo=1, routed)           0.287    10.153    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_14_n_0
+    SLICE_X25Y124        LUT3 (Prop_lut3_I2_O)        0.124    10.277 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6/O
+                         net (fo=18, routed)          0.566    10.843    poker/nolabel_line196/oppHandValueFunction/sorted_cards[6][5]_i_6_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    10.967 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10/O
+                         net (fo=3, routed)           0.777    11.744    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_10_n_0
+    SLICE_X25Y125        LUT6 (Prop_lut6_I4_O)        0.124    11.868 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0/O
+                         net (fo=1, routed)           0.264    12.133    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_12__0_n_0
+    SLICE_X25Y125        LUT5 (Prop_lut5_I2_O)        0.124    12.257 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0/O
+                         net (fo=12, routed)          0.621    12.878    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][3]_i_8__0_n_0
+    SLICE_X26Y125        LUT3 (Prop_lut3_I1_O)        0.124    13.002 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7/O
+                         net (fo=3, routed)           0.722    13.724    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][2]_i_7_n_0
+    SLICE_X25Y127        LUT6 (Prop_lut6_I5_O)        0.124    13.848 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0/O
+                         net (fo=8, routed)           0.691    14.539    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_13__0_n_0
+    SLICE_X25Y127        LUT5 (Prop_lut5_I3_O)        0.124    14.663 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4/O
+                         net (fo=3, routed)           0.815    15.478    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_4_n_0
+    SLICE_X26Y128        LUT6 (Prop_lut6_I2_O)        0.124    15.602 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5/O
+                         net (fo=5, routed)           0.586    16.188    poker/nolabel_line196/oppHandValueFunction/sorted_cards[5][1]_i_5_n_0
+    SLICE_X24Y129        LUT4 (Prop_lut4_I3_O)        0.124    16.312 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0/O
+                         net (fo=8, routed)           0.603    16.915    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][5]_i_9__0_n_0
+    SLICE_X23Y129        LUT4 (Prop_lut4_I3_O)        0.124    17.039 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0/O
+                         net (fo=9, routed)           0.785    17.824    poker/nolabel_line196/oppHandValueFunction/sorted_cards[4][3]_i_5__0_n_0
+    SLICE_X23Y128        LUT5 (Prop_lut5_I1_O)        0.124    17.948 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6/O
+                         net (fo=3, routed)           0.866    18.814    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_6_n_0
+    SLICE_X23Y128        LUT6 (Prop_lut6_I3_O)        0.124    18.938 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5/O
+                         net (fo=5, routed)           0.668    19.606    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_5_n_0
+    SLICE_X22Y127        LUT5 (Prop_lut5_I3_O)        0.124    19.730 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_2/O
+                         net (fo=4, routed)           0.730    20.460    poker/nolabel_line196/oppHandValueFunction/sorted_cards[3][1]_i_2_n_0
+    SLICE_X21Y128        LUT6 (Prop_lut6_I2_O)        0.124    20.584 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_7/O
+                         net (fo=3, routed)           0.590    21.174    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_7_n_0
+    SLICE_X21Y128        LUT3 (Prop_lut3_I2_O)        0.124    21.298 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_3/O
+                         net (fo=16, routed)          0.551    21.849    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][5]_i_3_n_0
+    SLICE_X20Y128        LUT3 (Prop_lut3_I1_O)        0.124    21.973 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_3/O
+                         net (fo=6, routed)           0.752    22.725    poker/nolabel_line196/oppHandValueFunction/sorted_cards[2][3]_i_3_n_0
+    SLICE_X18Y126        LUT5 (Prop_lut5_I1_O)        0.124    22.849 f  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_2/O
+                         net (fo=3, routed)           0.429    23.278    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][1]_i_2_n_0
+    SLICE_X19Y127        LUT6 (Prop_lut6_I3_O)        0.124    23.402 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_5/O
+                         net (fo=8, routed)           0.578    23.980    poker/nolabel_line196/oppHandValueFunction/sorted_cards[0][5]_i_5_n_0
+    SLICE_X19Y128        LUT5 (Prop_lut5_I3_O)        0.124    24.104 r  poker/nolabel_line196/oppHandValueFunction/sorted_cards[1][4]_i_1/O
+                         net (fo=1, routed)           0.000    24.104    poker/nolabel_line196/oppHandValueFunction/sorted_cards[1][4]_i_1_n_0
+    SLICE_X19Y128        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000    10.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.602    14.943    poker/nolabel_line196/oppHandValueFunction/clk_100MHz_IBUF_BUFG
+    SLICE_X19Y128        FDRE                                         r  poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][4]/C
+                         clock pessimism              0.267    15.210    
+                         clock uncertainty           -0.035    15.175    
+    SLICE_X19Y128        FDRE (Setup_fdre_C_D)        0.029    15.204    poker/nolabel_line196/oppHandValueFunction/sorted_cards_reg[1][4]
+  -------------------------------------------------------------------
+                         required time                         15.204    
+                         arrival time                         -24.104    
+  -------------------------------------------------------------------
+                         slack                                 -8.900    
+
+Slack (VIOLATED) :        -8.899ns  (required time - arrival time)
+  Source:                 poker/hole1_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            poker/nolabel_line196/playerHandValueFunction/sorted_cards_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        18.752ns  (logic 4.100ns (21.865%)  route 14.652ns (78.135%))
+  Logic Levels:           27  (LUT2=1 LUT3=6 LUT5=7 LUT6=13)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.942ns = ( 14.942 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.240ns
+    Clock Pessimism Removal (CPR):    0.267ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.719     5.240    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X30Y122        FDRE                                         r  poker/hole1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y122        FDRE (Prop_fdre_C_Q)         0.518     5.758 r  poker/hole1_reg[0]/Q
+                         net (fo=23, routed)          0.911     6.669    poker/nolabel_line196/playerHandValueFunction/playerHand1[0]
+    SLICE_X30Y124        LUT6 (Prop_lut6_I4_O)        0.124     6.793 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_16/O
+                         net (fo=1, routed)           0.319     7.112    poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_16_n_0
+    SLICE_X31Y125        LUT3 (Prop_lut3_I2_O)        0.124     7.236 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_11/O
+                         net (fo=28, routed)          0.515     7.751    poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_11_n_0
+    SLICE_X31Y125        LUT6 (Prop_lut6_I3_O)        0.124     7.875 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_20/O
+                         net (fo=1, routed)           0.340     8.215    poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_20_n_0
+    SLICE_X30Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.339 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_17/O
+                         net (fo=1, routed)           0.284     8.623    poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_17_n_0
+    SLICE_X33Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.747 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_12/O
+                         net (fo=22, routed)          0.569     9.315    poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_12_n_0
+    SLICE_X28Y123        LUT5 (Prop_lut5_I1_O)        0.124     9.439 f  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_16/O
+                         net (fo=1, routed)           0.406     9.846    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_16_n_0
+    SLICE_X33Y123        LUT6 (Prop_lut6_I1_O)        0.124     9.970 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_14/O
+                         net (fo=1, routed)           0.413    10.383    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_14_n_0
+    SLICE_X31Y124        LUT6 (Prop_lut6_I5_O)        0.124    10.507 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_13/O
+                         net (fo=1, routed)           0.151    10.658    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_13_n_0
+    SLICE_X31Y124        LUT6 (Prop_lut6_I5_O)        0.124    10.782 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_12/O
+                         net (fo=12, routed)          0.573    11.355    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_12_n_0
+    SLICE_X31Y126        LUT6 (Prop_lut6_I0_O)        0.124    11.479 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_10/O
+                         net (fo=3, routed)           0.445    11.925    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_10_n_0
+    SLICE_X28Y125        LUT6 (Prop_lut6_I5_O)        0.124    12.049 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][3]_i_12/O
+                         net (fo=1, routed)           0.307    12.355    poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][3]_i_12_n_0
+    SLICE_X30Y125        LUT5 (Prop_lut5_I2_O)        0.124    12.479 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][3]_i_8/O
+                         net (fo=12, routed)          0.370    12.849    poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][3]_i_8_n_0
+    SLICE_X30Y126        LUT3 (Prop_lut3_I1_O)        0.124    12.973 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][1]_i_7/O
+                         net (fo=3, routed)           0.602    13.575    poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][1]_i_7_n_0
+    SLICE_X30Y127        LUT6 (Prop_lut6_I0_O)        0.124    13.699 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][5]_i_13/O
+                         net (fo=8, routed)           0.632    14.331    poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][5]_i_13_n_0
+    SLICE_X31Y127        LUT5 (Prop_lut5_I3_O)        0.150    14.481 f  poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_9/O
+                         net (fo=3, routed)           0.829    15.311    poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_9_n_0
+    SLICE_X30Y127        LUT6 (Prop_lut6_I3_O)        0.332    15.643 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_8/O
+                         net (fo=5, routed)           0.464    16.107    poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_8_n_0
+    SLICE_X31Y128        LUT6 (Prop_lut6_I4_O)        0.124    16.231 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_4/O
+                         net (fo=3, routed)           0.652    16.882    poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_4_n_0
+    SLICE_X31Y128        LUT6 (Prop_lut6_I2_O)        0.124    17.006 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_5/O
+                         net (fo=5, routed)           0.603    17.610    poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_5_n_0
+    SLICE_X32Y128        LUT5 (Prop_lut5_I3_O)        0.124    17.734 f  poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][1]_i_6/O
+                         net (fo=3, routed)           0.732    18.465    poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][1]_i_6_n_0
+    SLICE_X31Y129        LUT6 (Prop_lut6_I3_O)        0.124    18.589 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][1]_i_5/O
+                         net (fo=5, routed)           0.749    19.338    poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][1]_i_5_n_0
+    SLICE_X30Y130        LUT3 (Prop_lut3_I2_O)        0.124    19.462 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][5]_i_11/O
+                         net (fo=8, routed)           0.658    20.121    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][5]_i_11_n_0
+    SLICE_X31Y130        LUT3 (Prop_lut3_I1_O)        0.124    20.245 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][3]_i_2/O
+                         net (fo=7, routed)           0.693    20.937    poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][3]_i_2_n_0
+    SLICE_X31Y131        LUT5 (Prop_lut5_I2_O)        0.124    21.061 f  poker/nolabel_line196/playerHandValueFunction/sorted_cards[2][1]_i_3/O
+                         net (fo=3, routed)           0.871    21.932    poker/nolabel_line196/playerHandValueFunction/sorted_cards[2][1]_i_3_n_0
+    SLICE_X28Y130        LUT6 (Prop_lut6_I3_O)        0.124    22.056 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][1]_i_4/O
+                         net (fo=3, routed)           0.313    22.369    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][1]_i_4_n_0
+    SLICE_X29Y130        LUT3 (Prop_lut3_I2_O)        0.124    22.493 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[2][5]_i_6/O
+                         net (fo=9, routed)           0.185    22.678    poker/nolabel_line196/playerHandValueFunction/sorted_cards[2][5]_i_6_n_0
+    SLICE_X29Y130        LUT3 (Prop_lut3_I1_O)        0.124    22.802 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][5]_i_3/O
+                         net (fo=12, routed)          0.497    23.299    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][5]_i_3_n_0
+    SLICE_X26Y130        LUT2 (Prop_lut2_I0_O)        0.124    23.423 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][3]_i_1/O
+                         net (fo=1, routed)           0.569    23.992    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][3]_i_1_n_0
+    SLICE_X26Y130        FDRE                                         r  poker/nolabel_line196/playerHandValueFunction/sorted_cards_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000    10.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.601    14.942    poker/nolabel_line196/playerHandValueFunction/clk_100MHz_IBUF_BUFG
+    SLICE_X26Y130        FDRE                                         r  poker/nolabel_line196/playerHandValueFunction/sorted_cards_reg[0][3]/C
+                         clock pessimism              0.267    15.209    
+                         clock uncertainty           -0.035    15.174    
+    SLICE_X26Y130        FDRE (Setup_fdre_C_D)       -0.081    15.093    poker/nolabel_line196/playerHandValueFunction/sorted_cards_reg[0][3]
+  -------------------------------------------------------------------
+                         required time                         15.093    
+                         arrival time                         -23.992    
+  -------------------------------------------------------------------
+                         slack                                 -8.899    
+
+Slack (VIOLATED) :        -8.899ns  (required time - arrival time)
+  Source:                 poker/hole1_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            poker/nolabel_line196/playerHandValueFunction/sorted_cards_reg[1][4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        18.861ns  (logic 4.100ns (21.738%)  route 14.761ns (78.262%))
+  Logic Levels:           27  (LUT3=6 LUT4=1 LUT5=7 LUT6=13)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.942ns = ( 14.942 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.240ns
+    Clock Pessimism Removal (CPR):    0.267ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.719     5.240    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X30Y122        FDRE                                         r  poker/hole1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y122        FDRE (Prop_fdre_C_Q)         0.518     5.758 r  poker/hole1_reg[0]/Q
+                         net (fo=23, routed)          0.911     6.669    poker/nolabel_line196/playerHandValueFunction/playerHand1[0]
+    SLICE_X30Y124        LUT6 (Prop_lut6_I4_O)        0.124     6.793 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_16/O
+                         net (fo=1, routed)           0.319     7.112    poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_16_n_0
+    SLICE_X31Y125        LUT3 (Prop_lut3_I2_O)        0.124     7.236 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_11/O
+                         net (fo=28, routed)          0.515     7.751    poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_11_n_0
+    SLICE_X31Y125        LUT6 (Prop_lut6_I3_O)        0.124     7.875 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_20/O
+                         net (fo=1, routed)           0.340     8.215    poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_20_n_0
+    SLICE_X30Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.339 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_17/O
+                         net (fo=1, routed)           0.284     8.623    poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_17_n_0
+    SLICE_X33Y124        LUT5 (Prop_lut5_I4_O)        0.124     8.747 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_12/O
+                         net (fo=22, routed)          0.569     9.315    poker/nolabel_line196/playerHandValueFunction/sorted_cards[6][5]_i_12_n_0
+    SLICE_X28Y123        LUT5 (Prop_lut5_I1_O)        0.124     9.439 f  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_16/O
+                         net (fo=1, routed)           0.406     9.846    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_16_n_0
+    SLICE_X33Y123        LUT6 (Prop_lut6_I1_O)        0.124     9.970 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_14/O
+                         net (fo=1, routed)           0.413    10.383    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_14_n_0
+    SLICE_X31Y124        LUT6 (Prop_lut6_I5_O)        0.124    10.507 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_13/O
+                         net (fo=1, routed)           0.151    10.658    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_13_n_0
+    SLICE_X31Y124        LUT6 (Prop_lut6_I5_O)        0.124    10.782 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_12/O
+                         net (fo=12, routed)          0.573    11.355    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_12_n_0
+    SLICE_X31Y126        LUT6 (Prop_lut6_I0_O)        0.124    11.479 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_10/O
+                         net (fo=3, routed)           0.445    11.925    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][0]_i_10_n_0
+    SLICE_X28Y125        LUT6 (Prop_lut6_I5_O)        0.124    12.049 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][3]_i_12/O
+                         net (fo=1, routed)           0.307    12.355    poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][3]_i_12_n_0
+    SLICE_X30Y125        LUT5 (Prop_lut5_I2_O)        0.124    12.479 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][3]_i_8/O
+                         net (fo=12, routed)          0.370    12.849    poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][3]_i_8_n_0
+    SLICE_X30Y126        LUT3 (Prop_lut3_I1_O)        0.124    12.973 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][1]_i_7/O
+                         net (fo=3, routed)           0.602    13.575    poker/nolabel_line196/playerHandValueFunction/sorted_cards[5][1]_i_7_n_0
+    SLICE_X30Y127        LUT6 (Prop_lut6_I0_O)        0.124    13.699 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][5]_i_13/O
+                         net (fo=8, routed)           0.632    14.331    poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][5]_i_13_n_0
+    SLICE_X31Y127        LUT5 (Prop_lut5_I3_O)        0.150    14.481 f  poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_9/O
+                         net (fo=3, routed)           0.829    15.311    poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_9_n_0
+    SLICE_X30Y127        LUT6 (Prop_lut6_I3_O)        0.332    15.643 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_8/O
+                         net (fo=5, routed)           0.464    16.107    poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_8_n_0
+    SLICE_X31Y128        LUT6 (Prop_lut6_I4_O)        0.124    16.231 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_4/O
+                         net (fo=3, routed)           0.652    16.882    poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_4_n_0
+    SLICE_X31Y128        LUT6 (Prop_lut6_I2_O)        0.124    17.006 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_5/O
+                         net (fo=5, routed)           0.603    17.610    poker/nolabel_line196/playerHandValueFunction/sorted_cards[4][1]_i_5_n_0
+    SLICE_X32Y128        LUT5 (Prop_lut5_I3_O)        0.124    17.734 f  poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][1]_i_6/O
+                         net (fo=3, routed)           0.732    18.465    poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][1]_i_6_n_0
+    SLICE_X31Y129        LUT6 (Prop_lut6_I3_O)        0.124    18.589 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][1]_i_5/O
+                         net (fo=5, routed)           0.749    19.338    poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][1]_i_5_n_0
+    SLICE_X30Y130        LUT3 (Prop_lut3_I2_O)        0.124    19.462 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][5]_i_11/O
+                         net (fo=8, routed)           0.658    20.121    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][5]_i_11_n_0
+    SLICE_X31Y130        LUT3 (Prop_lut3_I1_O)        0.124    20.245 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][3]_i_2/O
+                         net (fo=7, routed)           0.688    20.932    poker/nolabel_line196/playerHandValueFunction/sorted_cards[3][3]_i_2_n_0
+    SLICE_X31Y131        LUT3 (Prop_lut3_I1_O)        0.124    21.056 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[2][5]_i_3/O
+                         net (fo=16, routed)          0.532    21.588    poker/nolabel_line196/playerHandValueFunction/sorted_cards[2][5]_i_3_n_0
+    SLICE_X30Y130        LUT3 (Prop_lut3_I1_O)        0.124    21.712 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[2][3]_i_3/O
+                         net (fo=6, routed)           0.338    22.050    poker/nolabel_line196/playerHandValueFunction/sorted_cards[2][3]_i_3_n_0
+    SLICE_X28Y130        LUT4 (Prop_lut4_I0_O)        0.124    22.174 f  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][2]_i_2/O
+                         net (fo=3, routed)           0.821    22.995    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][2]_i_2_n_0
+    SLICE_X28Y131        LUT6 (Prop_lut6_I0_O)        0.124    23.119 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][5]_i_5/O
+                         net (fo=8, routed)           0.858    23.977    poker/nolabel_line196/playerHandValueFunction/sorted_cards[0][5]_i_5_n_0
+    SLICE_X28Y131        LUT5 (Prop_lut5_I3_O)        0.124    24.101 r  poker/nolabel_line196/playerHandValueFunction/sorted_cards[1][4]_i_1/O
+                         net (fo=1, routed)           0.000    24.101    poker/nolabel_line196/playerHandValueFunction/sorted_cards[1][4]_i_1_n_0
+    SLICE_X28Y131        FDRE                                         r  poker/nolabel_line196/playerHandValueFunction/sorted_cards_reg[1][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000    10.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         1.601    14.942    poker/nolabel_line196/playerHandValueFunction/clk_100MHz_IBUF_BUFG
+    SLICE_X28Y131        FDRE                                         r  poker/nolabel_line196/playerHandValueFunction/sorted_cards_reg[1][4]/C
+                         clock pessimism              0.267    15.209    
+                         clock uncertainty           -0.035    15.174    
+    SLICE_X28Y131        FDRE (Setup_fdre_C_D)        0.029    15.203    poker/nolabel_line196/playerHandValueFunction/sorted_cards_reg[1][4]
+  -------------------------------------------------------------------
+                         required time                         15.203    
+                         arrival time                         -24.101    
+  -------------------------------------------------------------------
+                         slack                                 -8.899    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.084ns  (arrival time - required time)
+  Source:                 poker/tx_data_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            UART_UNIT/FIFO_TX_UNIT/memory_reg_0_3_0_5/RAMB/I
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.246ns  (logic 0.141ns (57.415%)  route 0.105ns (42.585%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    1.444ns
+    Clock Pessimism Removal (CPR):    0.497ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.561     1.444    poker/clk_100MHz_IBUF_BUFG
+    SLICE_X32Y39         FDRE                                         r  poker/tx_data_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y39         FDRE (Prop_fdre_C_Q)         0.141     1.585 r  poker/tx_data_reg[2]/Q
+                         net (fo=1, routed)           0.105     1.690    UART_UNIT/FIFO_TX_UNIT/memory_reg_0_3_0_5/DIB0
+    SLICE_X30Y39         RAMD32                                       r  UART_UNIT/FIFO_TX_UNIT/memory_reg_0_3_0_5/RAMB/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.830     1.957    UART_UNIT/FIFO_TX_UNIT/memory_reg_0_3_0_5/WCLK
+    SLICE_X30Y39         RAMD32                                       r  UART_UNIT/FIFO_TX_UNIT/memory_reg_0_3_0_5/RAMB/CLK
+                         clock pessimism             -0.497     1.460    
+    SLICE_X30Y39         RAMD32 (Hold_ramd32_CLK_I)
+                                                      0.146     1.606    UART_UNIT/FIFO_TX_UNIT/memory_reg_0_3_0_5/RAMB
+  -------------------------------------------------------------------
+                         required time                         -1.606    
+                         arrival time                           1.690    
+  -------------------------------------------------------------------
+                         slack                                  0.084    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMA/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.414ns  (logic 0.141ns (34.029%)  route 0.273ns (65.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.592     1.475    UART_UNIT/FIFO_RX_UNIT/clk_100MHz_IBUF_BUFG
+    SLICE_X63Y37         FDCE                                         r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y37         FDCE (Prop_fdce_C_Q)         0.141     1.616 r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/Q
+                         net (fo=20, routed)          0.273     1.889    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/ADDRD0
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMA/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.864     1.991    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/WCLK
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMA/CLK
+                         clock pessimism             -0.499     1.492    
+    SLICE_X64Y38         RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.802    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMA
+  -------------------------------------------------------------------
+                         required time                         -1.802    
+                         arrival time                           1.889    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMA_D1/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.414ns  (logic 0.141ns (34.029%)  route 0.273ns (65.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.592     1.475    UART_UNIT/FIFO_RX_UNIT/clk_100MHz_IBUF_BUFG
+    SLICE_X63Y37         FDCE                                         r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y37         FDCE (Prop_fdce_C_Q)         0.141     1.616 r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/Q
+                         net (fo=20, routed)          0.273     1.889    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/ADDRD0
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMA_D1/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.864     1.991    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/WCLK
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMA_D1/CLK
+                         clock pessimism             -0.499     1.492    
+    SLICE_X64Y38         RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.802    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMA_D1
+  -------------------------------------------------------------------
+                         required time                         -1.802    
+                         arrival time                           1.889    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMB/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.414ns  (logic 0.141ns (34.029%)  route 0.273ns (65.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.592     1.475    UART_UNIT/FIFO_RX_UNIT/clk_100MHz_IBUF_BUFG
+    SLICE_X63Y37         FDCE                                         r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y37         FDCE (Prop_fdce_C_Q)         0.141     1.616 r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/Q
+                         net (fo=20, routed)          0.273     1.889    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/ADDRD0
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMB/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.864     1.991    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/WCLK
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMB/CLK
+                         clock pessimism             -0.499     1.492    
+    SLICE_X64Y38         RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.802    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMB
+  -------------------------------------------------------------------
+                         required time                         -1.802    
+                         arrival time                           1.889    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMB_D1/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.414ns  (logic 0.141ns (34.029%)  route 0.273ns (65.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.592     1.475    UART_UNIT/FIFO_RX_UNIT/clk_100MHz_IBUF_BUFG
+    SLICE_X63Y37         FDCE                                         r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y37         FDCE (Prop_fdce_C_Q)         0.141     1.616 r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/Q
+                         net (fo=20, routed)          0.273     1.889    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/ADDRD0
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMB_D1/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.864     1.991    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/WCLK
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMB_D1/CLK
+                         clock pessimism             -0.499     1.492    
+    SLICE_X64Y38         RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.802    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMB_D1
+  -------------------------------------------------------------------
+                         required time                         -1.802    
+                         arrival time                           1.889    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMC/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.414ns  (logic 0.141ns (34.029%)  route 0.273ns (65.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.592     1.475    UART_UNIT/FIFO_RX_UNIT/clk_100MHz_IBUF_BUFG
+    SLICE_X63Y37         FDCE                                         r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y37         FDCE (Prop_fdce_C_Q)         0.141     1.616 r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/Q
+                         net (fo=20, routed)          0.273     1.889    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/ADDRD0
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMC/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.864     1.991    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/WCLK
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMC/CLK
+                         clock pessimism             -0.499     1.492    
+    SLICE_X64Y38         RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.802    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMC
+  -------------------------------------------------------------------
+                         required time                         -1.802    
+                         arrival time                           1.889    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMC_D1/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.414ns  (logic 0.141ns (34.029%)  route 0.273ns (65.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.592     1.475    UART_UNIT/FIFO_RX_UNIT/clk_100MHz_IBUF_BUFG
+    SLICE_X63Y37         FDCE                                         r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y37         FDCE (Prop_fdce_C_Q)         0.141     1.616 r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/Q
+                         net (fo=20, routed)          0.273     1.889    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/ADDRD0
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMC_D1/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.864     1.991    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/WCLK
+    SLICE_X64Y38         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMC_D1/CLK
+                         clock pessimism             -0.499     1.492    
+    SLICE_X64Y38         RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.802    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMC_D1
+  -------------------------------------------------------------------
+                         required time                         -1.802    
+                         arrival time                           1.889    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMD/ADR0
+                            (rising edge-triggered cell RAMS32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.414ns  (logic 0.141ns (34.029%)  route 0.273ns (65.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.592     1.475    UART_UNIT/FIFO_RX_UNIT/clk_100MHz_IBUF_BUFG
+    SLICE_X63Y37         FDCE                                         r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y37         FDCE (Prop_fdce_C_Q)         0.141     1.616 r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/Q
+                         net (fo=20, routed)          0.273     1.889    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/ADDRD0
+    SLICE_X64Y38         RAMS32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMD/ADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.864     1.991    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/WCLK
+    SLICE_X64Y38         RAMS32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMD/CLK
+                         clock pessimism             -0.499     1.492    
+    SLICE_X64Y38         RAMS32 (Hold_rams32_CLK_ADR0)
+                                                      0.310     1.802    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMD
+  -------------------------------------------------------------------
+                         required time                         -1.802    
+                         arrival time                           1.889    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMD_D1/ADR0
+                            (rising edge-triggered cell RAMS32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.414ns  (logic 0.141ns (34.029%)  route 0.273ns (65.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.592     1.475    UART_UNIT/FIFO_RX_UNIT/clk_100MHz_IBUF_BUFG
+    SLICE_X63Y37         FDCE                                         r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y37         FDCE (Prop_fdce_C_Q)         0.141     1.616 r  UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[0]/Q
+                         net (fo=20, routed)          0.273     1.889    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/ADDRD0
+    SLICE_X64Y38         RAMS32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMD_D1/ADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.864     1.991    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/WCLK
+    SLICE_X64Y38         RAMS32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMD_D1/CLK
+                         clock pessimism             -0.499     1.492    
+    SLICE_X64Y38         RAMS32 (Hold_rams32_CLK_ADR0)
+                                                      0.310     1.802    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMD_D1
+  -------------------------------------------------------------------
+                         required time                         -1.802    
+                         arrival time                           1.889    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.096ns  (arrival time - required time)
+  Source:                 UART_UNIT/UART_RX_UNIT/data_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMB/I
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.852%)  route 0.116ns (45.148%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.989ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.592     1.475    UART_UNIT/UART_RX_UNIT/clk_100MHz_IBUF_BUFG
+    SLICE_X62Y37         FDCE                                         r  UART_UNIT/UART_RX_UNIT/data_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y37         FDCE (Prop_fdce_C_Q)         0.141     1.616 r  UART_UNIT/UART_RX_UNIT/data_reg_reg[2]/Q
+                         net (fo=2, routed)           0.116     1.732    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/DIB0
+    SLICE_X64Y37         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMB/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    clk_100MHz
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_100MHz_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_100MHz_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_100MHz_IBUF_BUFG_inst/O
+                         net (fo=782, routed)         0.862     1.989    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/WCLK
+    SLICE_X64Y37         RAMD32                                       r  UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMB/CLK
+                         clock pessimism             -0.499     1.490    
+    SLICE_X64Y37         RAMD32 (Hold_ramd32_CLK_I)
+                                                      0.146     1.636    UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMB
+  -------------------------------------------------------------------
+                         required time                         -1.636    
+                         arrival time                           1.732    
+  -------------------------------------------------------------------
+                         slack                                  0.096    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk_100MHz }
+
+Check Type        Corner  Lib Pin     Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I      n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  clk_100MHz_IBUF_BUFG_inst/I
+Min Period        n/a     FDCE/C      n/a            1.000         10.000      9.000      SLICE_X2Y15    CALL_DEBOUNCER/FSM_sequential_state_reg_reg[0]/C
+Min Period        n/a     FDCE/C      n/a            1.000         10.000      9.000      SLICE_X2Y16    CALL_DEBOUNCER/FSM_sequential_state_reg_reg[1]/C
+Min Period        n/a     FDRE/C      n/a            1.000         10.000      9.000      SLICE_X45Y44   poker/opponent_current_chips_reg[4]/C
+Min Period        n/a     FDRE/C      n/a            1.000         10.000      9.000      SLICE_X46Y43   poker/opponent_current_chips_reg[5]/C
+Min Period        n/a     FDRE/C      n/a            1.000         10.000      9.000      SLICE_X41Y42   poker/opponent_current_chips_reg[6]/C
+Min Period        n/a     FDRE/C      n/a            1.000         10.000      9.000      SLICE_X45Y40   poker/opponent_current_chips_reg[7]/C
+Min Period        n/a     FDRE/C      n/a            1.000         10.000      9.000      SLICE_X28Y61   gameplay/flop1_S/oled_data_reg[10]/C
+Min Period        n/a     FDRE/C      n/a            1.000         10.000      9.000      SLICE_X45Y37   poker/opponent_raise_value_reg[0]/C
+Min Period        n/a     FDRE/C      n/a            1.000         10.000      9.000      SLICE_X45Y38   poker/opponent_raise_value_reg[1]/C
+Low Pulse Width   Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMA/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMA_D1/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMB/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMB_D1/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMC/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMC_D1/CLK
+Low Pulse Width   Fast    RAMS32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMD/CLK
+Low Pulse Width   Fast    RAMS32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMD_D1/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y38   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMA/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y38   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_6_7/RAMA_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMA/CLK
+High Pulse Width  Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMA_D1/CLK
+High Pulse Width  Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMA_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMB/CLK
+High Pulse Width  Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMB/CLK
+High Pulse Width  Slow    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMB_D1/CLK
+High Pulse Width  Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMB_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMC/CLK
+High Pulse Width  Fast    RAMD32/CLK  n/a            1.250         5.000       3.750      SLICE_X64Y37   UART_UNIT/FIFO_RX_UNIT/memory_reg_0_3_0_5/RAMC/CLK
+
+
+

@@ -1,0 +1,113 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 41184
+License: Customer
+
+Current time: 	Fri Jan 17 01:30:53 SGT 2025
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 38 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	puach
+User home directory: C:/Users/puach
+User working directory: C:/Users/puach/Documents/Y2S2/EE2026/poker_uart
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/puach/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/puach/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/puach/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/vivado.log
+Vivado journal file location: 	C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/vivado.jou
+Engine tmp dir: 	C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/.Xil/Vivado-41184-Fred_Laptop
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	213 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 534 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 64 MB (+64613kb) [00:00:12]
+// [Engine Memory]: 497 MB (+369908kb) [00:00:12]
+// Opening Vivado Project: C:\Users\puach\Documents\Y2S2\EE2026\poker_uart\poker_uart.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 80 MB (+13506kb) [00:00:17]
+// [Engine Memory]: 599 MB (+81043kb) [00:00:17]
+// [GUI Memory]: 91 MB (+7493kb) [00:00:18]
+// [Engine Memory]: 633 MB (+3752kb) [00:00:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 41 MB. Current time: 1/17/25 1:30:58 AM SGT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 212ms to process. Increasing delay to 2000 ms.
+// Project name: poker_uart; location: C:/Users/puach/Documents/Y2S2/EE2026/poker_uart; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 912.301 ; gain = 131.840 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (move_card.v) elapsed time: 0.2s
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, move_card (move_card.v)]", 2, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, poker_uart (poker_test.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, poker_uart (poker_test.v), raise_DEBOUNCER : debounce_explicit (debounce_explicit.v)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, poker_uart (poker_test.v), raise_DEBOUNCER : debounce_explicit (debounce_explicit.v)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, poker_uart (poker_test.v), raise_DEBOUNCER : debounce_explicit (debounce_explicit.v)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, poker_uart (poker_test.v), poker : game_flow (game_flow.v)]", 7); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, poker_uart (poker_test.v), poker : game_flow (game_flow.v), rng : CombinedLFSR (CombinedLSFR.v)]", 8, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, poker_uart (poker_test.v), poker : game_flow (game_flow.v), gen : seedgen (seedgen.v)]", 9); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, poker_uart (poker_test.v), poker : game_flow (game_flow.v), gen : seedgen (seedgen.v)]", 9); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, poker_uart (poker_test.v), poker : game_flow (game_flow.v)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, poker_uart (poker_test.v), poker : game_flow (game_flow.v)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node

@@ -1,0 +1,1881 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Apr  7 03:01:35 2024
+# Process ID: 50392
+# Current directory: C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.runs/synth_1
+# Command line: vivado.exe -log poker_uart.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source poker_uart.tcl
+# Log file: C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.runs/synth_1/poker_uart.vds
+# Journal file: C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source poker_uart.tcl -notrace
+Command: synth_design -top poker_uart -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20904 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 360.570 ; gain = 103.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'poker_uart' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/poker_test.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/uart_top.v:23]
+	Parameter DBITS bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter BR_LIMIT bound to: 651 - type: integer 
+	Parameter BR_BITS bound to: 10 - type: integer 
+	Parameter FIFO_EXP bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_rate_generator' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/baud_rate_generator.v:23]
+	Parameter N bound to: 10 - type: integer 
+	Parameter M bound to: 651 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_rate_generator' (1#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/baud_rate_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/uart_receiver.v:15]
+	Parameter DBITS bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter start bound to: 2'b01 
+	Parameter data bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (2#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/uart_receiver.v:15]
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/uart_transmitter.v:15]
+	Parameter DBITS bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter start bound to: 2'b01 
+	Parameter data bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (3#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/uart_transmitter.v:15]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/fifo.v:23]
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter ADDR_SPACE_EXP bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/fifo.v:86]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (4#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/fifo.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (5#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/uart_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce_explicit' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/debounce_explicit.v:17]
+	Parameter zero bound to: 2'b00 
+	Parameter wait0 bound to: 2'b01 
+	Parameter one bound to: 2'b10 
+	Parameter wait1 bound to: 2'b11 
+	Parameter N bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce_explicit' (6#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/debounce_explicit.v:17]
+INFO: [Synth 8-6157] synthesizing module 'game_flow' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:23]
+	Parameter INITIAL bound to: 1 - type: integer 
+	Parameter DEAL_OWN_CARDS bound to: 2 - type: integer 
+	Parameter DEAL_SLAVE_CARDS bound to: 3 - type: integer 
+	Parameter MASTER_PRE_FLOP_ACTION bound to: 4 - type: integer 
+	Parameter SLAVE_PRE_FLOP_ACTION bound to: 5 - type: integer 
+	Parameter MASTER_DEAL_FLOP bound to: 6 - type: integer 
+	Parameter MASTER_SECOND_ACTION bound to: 7 - type: integer 
+	Parameter SLAVE_SECOND_ACTION bound to: 8 - type: integer 
+	Parameter MASTER_DEAL_TURN bound to: 9 - type: integer 
+	Parameter MASTER_THIRD_ACTION bound to: 10 - type: integer 
+	Parameter SLAVE_THIRD_ACTION bound to: 11 - type: integer 
+	Parameter MASTER_DEAL_RIVER bound to: 12 - type: integer 
+	Parameter MASTER_FOURTH_ACTION bound to: 13 - type: integer 
+	Parameter SLAVE_FOURTH_ACTION bound to: 14 - type: integer 
+	Parameter MASTER_SETTLE_POT bound to: 15 - type: integer 
+	Parameter SHOW_OPP_CARD bound to: 16 - type: integer 
+	Parameter WIN_SCREEN bound to: 17 - type: integer 
+	Parameter LOSE_SCREEN bound to: 18 - type: integer 
+	Parameter CHECK bound to: 8'b00010000 
+	Parameter CHECK_TEST bound to: 8'b01100011 
+	Parameter FOLD bound to: 8'b00100000 
+	Parameter CALL bound to: 2'b01 
+	Parameter WIN bound to: 8'b11111111 
+	Parameter LOSE bound to: 8'b00000001 
+	Parameter SPLIT bound to: 8'b00000011 
+INFO: [Synth 8-6157] synthesizing module 'CombinedLFSR' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/CombinedLSFR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'flexible_clk' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/flexible_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flexible_clk' (7#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/flexible_clk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'numgen' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/numgen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'numgen' (8#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/numgen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'suitgen' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/suitgen.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'suitgen' (9#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/suitgen.v:22]
+WARNING: [Synth 8-5788] Register nextState_reg in module CombinedLFSR is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/CombinedLSFR.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'CombinedLFSR' (10#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/CombinedLSFR.v:3]
+WARNING: [Synth 8-350] instance 'rng' of module 'CombinedLFSR' requires 15 connections, but only 14 given [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:167]
+INFO: [Synth 8-6157] synthesizing module 'seedgen' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CircularCounter' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/CircularCounter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'CircularCounter' (11#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/CircularCounter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'seedgen' (12#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'who_win' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/who_win.v:23]
+	Parameter STATE_BEGIN_CHECK bound to: 0 - type: integer 
+	Parameter STATE_CHECKING bound to: 1 - type: integer 
+	Parameter STATE_FINISH_BOTH_CHECK bound to: 2 - type: integer 
+	Parameter STATE_COMPLETE bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hand_value' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/hand_value.v:23]
+	Parameter STATE_STRAIGHT_FLUSH_CHECK bound to: 5'b00000 
+	Parameter STATE_FOAK_CHECK bound to: 5'b00001 
+	Parameter STATE_FULL_HOUSE_CHECK bound to: 5'b00010 
+	Parameter STATE_FLUSH_CHECK bound to: 5'b00011 
+	Parameter STATE_STRAIGHT_CHECK bound to: 5'b00100 
+	Parameter STATE_TOAK_CHECK bound to: 5'b00101 
+	Parameter STATE_TWO_PAIR_CHECK bound to: 5'b00110 
+	Parameter STATE_PAIR_CHECK bound to: 5'b00111 
+	Parameter STATE_HIGH_CARD_CHECK bound to: 5'b01000 
+	Parameter STATE_DONE bound to: 5'b01001 
+	Parameter STATE_INIT bound to: 5'b01010 
+INFO: [Synth 8-6157] synthesizing module 'isStraightFlushChecker' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:23]
+WARNING: [Synth 8-6014] Unused sequential element isFlush_reg was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:39]
+WARNING: [Synth 8-6014] Unused sequential element foundFlush_reg was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:41]
+WARNING: [Synth 8-6014] Unused sequential element suitCounter_reg[3] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:45]
+WARNING: [Synth 8-6014] Unused sequential element suitCounter_reg[2] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:45]
+WARNING: [Synth 8-6014] Unused sequential element suitCounter_reg[1] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:45]
+WARNING: [Synth 8-6014] Unused sequential element suitCounter_reg[0] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:45]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[6] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:48]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[5] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:48]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[4] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:48]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[3] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:48]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[2] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:48]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[1] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:48]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[0] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:48]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[6] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:57]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[5] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:57]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[4] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:57]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[3] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:57]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[2] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:57]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[1] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:57]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[0] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:57]
+WARNING: [Synth 8-6014] Unused sequential element flushSuit_reg was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:61]
+WARNING: [Synth 8-6014] Unused sequential element foundStraight_reg was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'isStraightFlushChecker' (13#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightFlushChecker.v:23]
+INFO: [Synth 8-6157] synthesizing module 'isFOAKChecker' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:23]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[14] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[13] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[12] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[11] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[10] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[9] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[8] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[7] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[6] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[5] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[4] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[3] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[2] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[1] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[0] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[6] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:41]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[5] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:41]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[4] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:41]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[3] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:41]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[2] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:41]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[1] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:41]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[0] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'isFOAKChecker' (14#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFOAKChecker.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'kicker' does not match port width (5) of module 'isFOAKChecker' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/hand_value.v:67]
+INFO: [Synth 8-6157] synthesizing module 'isFullHouseChecker' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:23]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[14] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[13] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[12] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[11] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[10] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[9] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[8] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[7] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[6] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[5] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[4] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[3] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[2] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[1] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[0] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[6] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[5] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[4] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[3] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[2] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[1] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element valueArray_reg[0] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element foundThreeOfAKind_reg was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:56]
+WARNING: [Synth 8-6014] Unused sequential element foundPair_reg was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'isFullHouseChecker' (15#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFullHouseChecker.v:23]
+INFO: [Synth 8-6157] synthesizing module 'isFlushChecker' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:26]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[6] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[5] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[4] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[3] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[2] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[1] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[0] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:43]
+WARNING: [Synth 8-6014] Unused sequential element suitCounter_reg[3] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:52]
+WARNING: [Synth 8-6014] Unused sequential element suitCounter_reg[2] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:52]
+WARNING: [Synth 8-6014] Unused sequential element suitCounter_reg[1] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:52]
+WARNING: [Synth 8-6014] Unused sequential element suitCounter_reg[0] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:52]
+WARNING: [Synth 8-6014] Unused sequential element flushSuit_reg was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:61]
+WARNING: [Synth 8-6014] Unused sequential element foundFlush_reg was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:62]
+WARNING: [Synth 8-6014] Unused sequential element tempValue_reg was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'isFlushChecker' (16#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isFlushChecker.v:26]
+INFO: [Synth 8-6157] synthesizing module 'isStraightChecker' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightChecker.v:26]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[6] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[5] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[4] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[3] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[2] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[1] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element sorted_cards_reg[0] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightChecker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element straightCounter_reg was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightChecker.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'isStraightChecker' (17#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isStraightChecker.v:26]
+INFO: [Synth 8-6157] synthesizing module 'isTOAKChecker' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:23]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[14] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[13] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[12] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[11] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[10] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[9] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[8] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[7] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[6] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:38]
+WARNING: [Synth 8-6014] Unused sequential element valueCounter_reg[5] was removed.  [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:38]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'isTOAKChecker' (18#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTOAKChecker.v:23]
+INFO: [Synth 8-6157] synthesizing module 'isTwoPairChecker' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTwoPairChecker.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'isTwoPairChecker' (19#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isTwoPairChecker.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'kicker' does not match port width (5) of module 'isTwoPairChecker' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/hand_value.v:131]
+INFO: [Synth 8-6157] synthesizing module 'isPairChecker' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isPairChecker.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'isPairChecker' (20#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/isPairChecker.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HighCards' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/HighCards.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HighCards' (21#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/HighCards.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hand_value' (22#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/hand_value.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'who_win' (23#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/who_win.v:23]
+WARNING: [Synth 8-350] instance 'nolabel_line196' of module 'who_win' requires 14 connections, but only 13 given [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:196]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:285]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:315]
+WARNING: [Synth 8-6090] variable 'game_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:419]
+WARNING: [Synth 8-6090] variable 'game_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:427]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:441]
+WARNING: [Synth 8-6090] variable 'game_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:552]
+WARNING: [Synth 8-6090] variable 'game_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:560]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:574]
+WARNING: [Synth 8-6090] variable 'game_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:668]
+WARNING: [Synth 8-6090] variable 'game_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:676]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:690]
+WARNING: [Synth 8-6090] variable 'game_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:784]
+WARNING: [Synth 8-6090] variable 'game_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:792]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:944]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:972]
+WARNING: [Synth 8-6090] variable 'game_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:1036]
+WARNING: [Synth 8-6090] variable 'tx_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:1076]
+WARNING: [Synth 8-6090] variable 'tx_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:1077]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:1101]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:1234]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:1357]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:1496]
+WARNING: [Synth 8-3848] Net reset_rng in module/entity game_flow does not have driver. [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:161]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net seed[0] with 1st driver pin 'game_flow:/gen/seed[0]' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:167]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net seed[0] with 2nd driver pin 'GND' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:167]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net seed[0] is connected to constant driver, other driver is ignored [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:167]
+INFO: [Synth 8-6155] done synthesizing module 'game_flow' (24#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:23]
+INFO: [Synth 8-6157] synthesizing module 'anode_display' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/anode_display.v:23]
+	Parameter OFF bound to: 7'b1111111 
+	Parameter ZERO bound to: 7'b1000000 
+	Parameter ONE bound to: 7'b1111001 
+	Parameter TWO bound to: 7'b0100100 
+	Parameter THREE bound to: 7'b0110000 
+	Parameter FOUR bound to: 7'b0011001 
+	Parameter FIVE bound to: 7'b0010010 
+	Parameter SIX bound to: 7'b0000010 
+	Parameter SEVEN bound to: 7'b1111000 
+	Parameter EIGHT bound to: 7'b0000000 
+	Parameter NINE bound to: 7'b0010000 
+	Parameter S0 bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+	Parameter S2 bound to: 2'b10 
+	Parameter S3 bound to: 2'b11 
+	Parameter an3 bound to: 4'b0111 
+	Parameter an2 bound to: 4'b1011 
+	Parameter an1 bound to: 4'b1101 
+	Parameter an0 bound to: 4'b1110 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/anode_display.v:75]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/anode_display.v:88]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/anode_display.v:101]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/anode_display.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'anode_display' (25#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/anode_display.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'money' does not match port width (32) of module 'anode_display' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/poker_test.v:219]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (26#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'gameboard' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/gameboard.v:23]
+	Parameter WON bound to: 2'b01 
+	Parameter LOST bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'init_animation' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/init_animation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'init_animation' (27#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/init_animation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'card_number' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/card_number.v:23]
+	Parameter ACE bound to: 4'b0001 
+	Parameter TWO bound to: 4'b0010 
+	Parameter THREE bound to: 4'b0011 
+	Parameter FOUR bound to: 4'b0100 
+	Parameter FIVE bound to: 4'b0101 
+	Parameter SIX bound to: 4'b0110 
+	Parameter SEVEN bound to: 4'b0111 
+	Parameter EIGHT bound to: 4'b1000 
+	Parameter NINE bound to: 4'b1001 
+	Parameter TEN bound to: 4'b1010 
+	Parameter JACK bound to: 4'b1011 
+	Parameter QUEEN bound to: 4'b1100 
+	Parameter KING bound to: 4'b1101 
+INFO: [Synth 8-6155] done synthesizing module 'card_number' (28#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/card_number.v:23]
+INFO: [Synth 8-6157] synthesizing module 'card_suit' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/card_suit.v:23]
+	Parameter DIAMOND bound to: 3'b100 
+	Parameter CLUBS bound to: 3'b101 
+	Parameter HEARTS bound to: 3'b110 
+	Parameter SPADES bound to: 3'b111 
+INFO: [Synth 8-6155] done synthesizing module 'card_suit' (29#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/card_suit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blind' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/blind.v:23]
+	Parameter SMALL_BLIND bound to: 0 - type: integer 
+	Parameter BIG_BLIND bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'blind' (30#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/blind.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pot_amount' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/pot_amount.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pot_amount' (31#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/pot_amount.v:23]
+INFO: [Synth 8-6157] synthesizing module 'opponent_action' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/opponent_action.v:23]
+	Parameter CHECK bound to: 8'b00010000 
+	Parameter FOLD bound to: 8'b00100000 
+	Parameter CALL bound to: 8'b01000000 
+	Parameter RAISE bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'opponent_action' (32#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/opponent_action.v:23]
+INFO: [Synth 8-6157] synthesizing module 'win_animation' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/win_animation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'win_animation' (33#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/win_animation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lose_animation' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/lose_animation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lose_animation' (34#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/lose_animation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gameboard' (35#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/gameboard.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'amount' does not match port width (32) of module 'gameboard' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/poker_test.v:274]
+INFO: [Synth 8-6155] done synthesizing module 'poker_uart' (36#1) [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/poker_test.v:23]
+WARNING: [Synth 8-3917] design poker_uart has port dp driven by constant 1
+WARNING: [Synth 8-3331] design HighCards has unconnected port card2[3]
+WARNING: [Synth 8-3331] design HighCards has unconnected port card2[2]
+WARNING: [Synth 8-3331] design HighCards has unconnected port card2[1]
+WARNING: [Synth 8-3331] design HighCards has unconnected port card2[0]
+WARNING: [Synth 8-3331] design hand_value has unconnected port playerHand1[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port playerHand1[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port playerHand2[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port playerHand2[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop1[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop1[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop2[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop2[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop3[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop3[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port turn[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port turn[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port river[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port river[4]
+WARNING: [Synth 8-3331] design game_flow has unconnected port reset
+WARNING: [Synth 8-3331] design game_flow has unconnected port rx_fifo_not_empty
+WARNING: [Synth 8-3331] design poker_uart has unconnected port JC[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 590.203 ; gain = 332.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin rng:reset to constant 0 [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:167]
+WARNING: [Synth 8-3295] tying undriven pin gen:reset to constant 0 [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/game_flow.v:184]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 590.203 ; gain = 332.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 590.203 ; gain = 332.887
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/constrs_1/new/basys3_contraints.xdc]
+Finished Parsing XDC File [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/constrs_1/new/basys3_contraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/constrs_1/new/basys3_contraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/poker_uart_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/poker_uart_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 974.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:53 . Memory (MB): peak = 975.273 ; gain = 717.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:53 . Memory (MB): peak = 975.273 ; gain = 717.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:53 . Memory (MB): peak = 975.273 ; gain = 717.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_receiver'
+INFO: [Synth 8-5544] ROM "data_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tick_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nbits_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_transmitter'
+INFO: [Synth 8-5544] ROM "tx_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tick_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nbits_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'debounce_explicit'
+INFO: [Synth 8-5544] ROM "db_level" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'start2_reg' into 'start1_reg' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/CombinedLSFR.v:46]
+INFO: [Synth 8-5546] ROM "start1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card9" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "suitCounter_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "suitCounter_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "suitCounter_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "suitCounter_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "isFOAK" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kicker" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "highCard" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "highCard" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "highCard" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kicker" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pairCard" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pairCard" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "threeOfAKindCard" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pairCard" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "suitCounter_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "suitCounter_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "suitCounter_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "suitCounter_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "highCard" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kicker" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kicker" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kicker2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "foundKicker" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kicker" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "foundFirstPair" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "highPairCard" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "isPair" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pairCard" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pairCard" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kicker2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kicker3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kicker2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kicker3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sorted_cards" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "isDone" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "isStraightFlushCheckerStarter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'oppModuleCall_reg' into 'moduleCall_reg' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/who_win.v:54]
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "game_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flop1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flop2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flop3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hole1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hole1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hole2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hole2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "callWhoWin" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "win_lose" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "game_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flop1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flop2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flop3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hole1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hole1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hole2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hole2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "callWhoWin" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "win_lose" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "tx_tick" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'anode_display'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "timer0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "origin_y0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "origin_y" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "starting_animation_done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timer0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "origin_y0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "origin_y" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "starting_animation_done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "flop1_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flop2_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flop3_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "turn_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "river_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hole1_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hole2_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "opp_hole1_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "opp_hole2_suit0" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                               00 |                               00
+                   wait1 |                               01 |                               11
+                     one |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'debounce_explicit'
+WARNING: [Synth 8-327] inferring latch for variable 'db_level_reg' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/debounce_explicit.v:71]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                             0001 |                               00
+                      S1 |                             0010 |                               01
+                      S2 |                             0100 |                               10
+                      S3 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'anode_display'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:01:05 . Memory (MB): peak = 975.273 ; gain = 717.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |hand_value      |           2|     17151|
+|2     |who_win__GC0    |           1|       476|
+|3     |game_flow__GC0  |           1|     10206|
+|4     |card_number     |           9|      9153|
+|5     |card_suit       |           9|     10499|
+|6     |opponent_action |           1|     20303|
+|7     |gameboard__GCB1 |           1|     17122|
+|8     |gameboard__GCB2 |           1|     38061|
+|9     |gameboard__GCB3 |           1|     41789|
+|10    |win_animation   |           1|     40689|
+|11    |gameboard__GCB5 |           1|        56|
+|12    |poker_uart__GC0 |           1|      8955|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 599   
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 4     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 12    
+	   3 Input      8 Bit       Adders := 6     
+	   4 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 25    
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 102   
+	   2 Input      2 Bit       Adders := 9     
++---XORs : 
+	   4 Input      1 Bit         XORs := 2     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 24    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 29    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 17    
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 53    
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 79    
++---Multipliers : 
+	                 7x32  Multipliers := 4     
++---RAMs : 
+	               32 Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 8     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 4     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 176   
+	   3 Input     16 Bit        Muxes := 11    
+	   4 Input     16 Bit        Muxes := 11    
+	   5 Input     16 Bit        Muxes := 2     
+	   6 Input     16 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 130   
+	  19 Input      8 Bit        Muxes := 20    
+	   4 Input      8 Bit        Muxes := 9     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  12 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 100   
+	   4 Input      6 Bit        Muxes := 2     
+	  19 Input      6 Bit        Muxes := 3     
+	  20 Input      6 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 34    
+	  12 Input      5 Bit        Muxes := 6     
+	   3 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1050  
+	   3 Input      4 Bit        Muxes := 155   
+	   8 Input      4 Bit        Muxes := 2     
+	  15 Input      4 Bit        Muxes := 4     
+	  14 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 12    
+	   5 Input      4 Bit        Muxes := 5     
+	  11 Input      4 Bit        Muxes := 8     
+	   7 Input      4 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 3     
+	  19 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1334  
+	   4 Input      3 Bit        Muxes := 20    
+	  16 Input      3 Bit        Muxes := 10    
+	   3 Input      3 Bit        Muxes := 2     
+	  19 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 187   
+	   4 Input      2 Bit        Muxes := 11    
+	  11 Input      2 Bit        Muxes := 21    
+	  10 Input      2 Bit        Muxes := 1     
+	  12 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 2     
+	  19 Input      2 Bit        Muxes := 26    
+	   3 Input      2 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 61    
+	   2 Input      1 Bit        Muxes := 1046  
+	  16 Input      1 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 58    
+	  11 Input      1 Bit        Muxes := 32    
+	  12 Input      1 Bit        Muxes := 11    
+	  19 Input      1 Bit        Muxes := 52    
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+	  42 Input      1 Bit        Muxes := 1     
+	  40 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module isStraightFlushChecker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 20    
+	   4 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+Module isFOAKChecker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 7     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 39    
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 112   
+	  16 Input      3 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+Module isFullHouseChecker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 7     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 52    
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 112   
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 45    
+	  14 Input      1 Bit        Muxes := 1     
+Module isFlushChecker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 19    
+	   2 Input      3 Bit        Muxes := 20    
+	   4 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+Module isStraightChecker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 5     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+Module isTOAKChecker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 7     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 81    
+	   3 Input      4 Bit        Muxes := 16    
+	   2 Input      3 Bit        Muxes := 112   
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 15    
+Module isTwoPairChecker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 7     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 127   
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 170   
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 221   
+	   4 Input      1 Bit        Muxes := 1     
+Module isPairChecker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 7     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 130   
+	   9 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 40    
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 112   
+	  16 Input      3 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+Module HighCards 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module hand_value 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 19    
+	   2 Input      6 Bit        Muxes := 42    
+	   2 Input      5 Bit        Muxes := 10    
+	   3 Input      4 Bit        Muxes := 16    
+	   2 Input      4 Bit        Muxes := 30    
+	  11 Input      4 Bit        Muxes := 4     
+	  11 Input      2 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 84    
+	  11 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 9     
+Module who_win 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	  10 Input      2 Bit        Muxes := 1     
+	  12 Input      2 Bit        Muxes := 3     
+	  11 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 26    
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+	   4 Input      1 Bit        Muxes := 8     
+Module flexible_clk__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module numgen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module suitgen 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module CombinedLFSR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 9     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 10    
+	  12 Input      5 Bit        Muxes := 6     
+	  12 Input      1 Bit        Muxes := 11    
+Module CircularCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module seedgen 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module game_flow 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 11    
+	   4 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 15    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 91    
+	  19 Input      8 Bit        Muxes := 20    
+	   4 Input      8 Bit        Muxes := 8     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 15    
+	   4 Input      6 Bit        Muxes := 2     
+	  19 Input      6 Bit        Muxes := 3     
+	  20 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 61    
+	   5 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 6     
+	   3 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 3     
+	  19 Input      4 Bit        Muxes := 2     
+	  19 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 101   
+	  19 Input      2 Bit        Muxes := 26    
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 164   
+	  19 Input      1 Bit        Muxes := 52    
+	   4 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module card_number 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 28    
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 1     
+Module card_suit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 26    
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+Module opponent_action 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 55    
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  42 Input      1 Bit        Muxes := 1     
+Module flexible_clk__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module win_animation 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Multipliers : 
+	                 7x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+Module pot_amount 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 37    
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  40 Input      1 Bit        Muxes := 1     
+Module blind 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 16    
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 2     
+	   3 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+Module init_animation 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   4 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                 7x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module flexible_clk__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module lose_animation 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Multipliers : 
+	                 7x32  Multipliers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+Module gameboard 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 22    
+	   2 Input      2 Bit        Muxes := 9     
+Module baud_rate_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module uart_transmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+Module fifo__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               32 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 6     
+Module fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               32 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 6     
+Module debounce_explicit__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 6     
+Module debounce_explicit__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 6     
+Module debounce_explicit__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 6     
+Module debounce_explicit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 6     
+Module flexible_clk__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clk 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module anode_display 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  12 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk6p25Hz/clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk1kHz/clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "opp_hole1_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hole2_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hole1_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "river_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "turn_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flop3_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flop2_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "opp_hole2_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BAUD_RATE_GEN/tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk6p25Hz/clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk1kHz/clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design poker_uart has port dp driven by constant 1
+WARNING: [Synth 8-3331] design poker_uart has unconnected port JC[2]
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[0]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[1]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[2]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[3]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[4]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[5]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[6]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[7]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[8]' (FDR) to 'card_number:/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[9]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[11]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[12]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[13]' (FDR) to 'card_number:/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'card_number:/oled_data_reg[14]' (FDR) to 'card_number:/oled_data_reg[15]'
+WARNING: [Synth 8-3331] design HighCards has unconnected port card2[3]
+WARNING: [Synth 8-3331] design HighCards has unconnected port card2[2]
+WARNING: [Synth 8-3331] design HighCards has unconnected port card2[1]
+WARNING: [Synth 8-3331] design HighCards has unconnected port card2[0]
+WARNING: [Synth 8-3331] design hand_value has unconnected port playerHand1[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port playerHand1[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port playerHand2[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port playerHand2[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop1[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop1[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop2[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop2[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop3[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port flop3[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port turn[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port turn[4]
+WARNING: [Synth 8-3331] design hand_value has unconnected port river[7]
+WARNING: [Synth 8-3331] design hand_value has unconnected port river[4]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (highCardFunction/isProcessDone_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (isPairFunction/isProcessDone_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (isTOAKFunction/isProcessDone_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (isTwoPairFunction/isProcessDone_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (isStraightFunction/isProcessDone_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (isFlushFunction/isProcessDone_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (isFOAKFunction/isProcessDone_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (isFullHouseFunction/isProcessDone_reg)
+WARNING: [Synth 8-3332] Sequential element (kicker_reg[4]) is unused and will be removed from module isFOAKChecker.
+WARNING: [Synth 8-3332] Sequential element (isProcessDone_reg) is unused and will be removed from module isFOAKChecker.
+WARNING: [Synth 8-3332] Sequential element (isProcessDone_reg) is unused and will be removed from module isFullHouseChecker.
+WARNING: [Synth 8-3332] Sequential element (isProcessDone_reg) is unused and will be removed from module isFlushChecker.
+WARNING: [Synth 8-3332] Sequential element (isProcessDone_reg) is unused and will be removed from module isStraightChecker.
+WARNING: [Synth 8-3332] Sequential element (isProcessDone_reg) is unused and will be removed from module isTOAKChecker.
+WARNING: [Synth 8-3332] Sequential element (kicker_reg[4]) is unused and will be removed from module isTwoPairChecker.
+WARNING: [Synth 8-3332] Sequential element (isProcessDone_reg) is unused and will be removed from module isTwoPairChecker.
+WARNING: [Synth 8-3332] Sequential element (isProcessDone_reg) is unused and will be removed from module isPairChecker.
+WARNING: [Synth 8-3332] Sequential element (isProcessDone_reg) is unused and will be removed from module HighCards.
+INFO: [Synth 8-4471] merging register 'lfsr2/enable_reg' into 'lfsr1/enable_reg' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/suitgen.v:35]
+INFO: [Synth 8-5545] ROM "cc/clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "game_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design game_flow__GC0 has port opponent_action[7] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/card9_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/card8_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/card7_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/card6_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/card3_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/card2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/card1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/card5_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rng/card4_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dont_read_reg)
+INFO: [Synth 8-3886] merging instance 'LED_reg[2]' (FDE) to 'LED_reg[3]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[3]' (FDE) to 'LED_reg[4]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[4]' (FDE) to 'LED_reg[5]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[5]' (FDE) to 'LED_reg[6]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[6]' (FDE) to 'LED_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_reg[7] )
+INFO: [Synth 8-3886] merging instance 'game_state_reg[5]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[6]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[7]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[8]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[9]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[10]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[11]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[12]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[13]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[14]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[15]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[16]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[17]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[18]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[19]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[20]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[21]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[22]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[23]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[24]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[25]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[26]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[27]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[28]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[29]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_state_reg[30]' (FDE) to 'game_state_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_state_reg[31] )
+CRITICAL WARNING: [Synth 8-3352] multi-driven net seed[3] with 1st driver pin 'gen/seed_reg[3]/Q' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net seed[3] with 2nd driver pin 'GND' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net seed[3] is connected to constant driver, other driver is ignored [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net seed[2] with 1st driver pin 'gen/seed_reg[2]/Q' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net seed[2] with 2nd driver pin 'GND' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net seed[2] is connected to constant driver, other driver is ignored [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net seed[1] with 1st driver pin 'gen/seed_reg[1]/Q' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net seed[1] with 2nd driver pin 'GND' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net seed[1] is connected to constant driver, other driver is ignored [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net seed[0] with 1st driver pin 'gen/seed_reg[0]/Q' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net seed[0] with 2nd driver pin 'GND' [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net seed[0] is connected to constant driver, other driver is ignored [C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.srcs/sources_1/new/seedgen.v:14]
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[0]' (FDR) to 'oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[1]' (FDR) to 'oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[2]' (FDR) to 'oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[3]' (FDR) to 'oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[4]' (FDR) to 'oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[5]' (FDR) to 'oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[6]' (FDR) to 'oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[7]' (FDR) to 'oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[8]' (FDR) to 'oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[11]' (FDR) to 'oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[12]' (FDR) to 'oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[13]' (FDR) to 'oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[14]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[0]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[1]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[2]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[3]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[4]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[5]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[6]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[7]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[8]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[9]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[10]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[11]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[12]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[13]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[14]' (FDR) to 'oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[0]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[1]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[2]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[3]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[4]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[5]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[6]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[7]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[8]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[9]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[10]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[11]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[12]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[13]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pot/oled_data_reg[14]' (FDR) to 'pot/oled_data_reg[15]'
+INFO: [Synth 8-5545] ROM "timer0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "origin_y" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "origin_y0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "starting_animation_done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "flop1_suit0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'starting_animation/oled_data_reg[0]' (FD) to 'starting_animation/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'starting_animation/oled_data_reg[1]' (FD) to 'starting_animation/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'starting_animation/oled_data_reg[2]' (FD) to 'starting_animation/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'starting_animation/oled_data_reg[3]' (FD) to 'starting_animation/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'starting_animation/oled_data_reg[5]' (FD) to 'starting_animation/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'starting_animation/oled_data_reg[6]' (FD) to 'starting_animation/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'starting_animation/oled_data_reg[7]' (FD) to 'starting_animation/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'starting_animation/oled_data_reg[8]' (FD) to 'starting_animation/oled_data_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (starting_animation/\oled_data_reg[11] )
+INFO: [Synth 8-3886] merging instance 'starting_animation/oled_data_reg[12]' (FD) to 'starting_animation/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'starting_animation/oled_data_reg[13]' (FD) to 'starting_animation/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'small_big/oled_data_reg[0]' (FDR) to 'small_big/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'small_big/oled_data_reg[1]' (FDR) to 'small_big/oled_data_reg[2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\small_big/oled_data_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module init_animation.
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lose/\oled_data_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module lose_animation.
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\oled_data_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module win_animation.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:02:16 . Memory (MB): peak = 975.273 ; gain = 717.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives   | 
++------------+-----------------------------------+-----------+----------------------+--------------+
+|poker_uart  | UART_UNIT/FIFO_TX_UNIT/memory_reg | Implied   | 4 x 8                | RAM32M x 2   | 
+|poker_uart  | UART_UNIT/FIFO_RX_UNIT/memory_reg | Implied   | 4 x 8                | RAM32M x 2   | 
++------------+-----------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |hand_value      |           2|      8394|
+|2     |who_win__GC0    |           1|       246|
+|3     |game_flow__GC0  |           1|      3635|
+|4     |card_number     |           1|       259|
+|5     |card_suit       |           9|      7070|
+|6     |opponent_action |           1|     11747|
+|7     |gameboard__GCB1 |           1|      5770|
+|8     |gameboard__GCB2 |           1|      2603|
+|9     |gameboard__GCB3 |           1|       699|
+|10    |win_animation   |           1|       486|
+|11    |gameboard__GCB5 |           1|        56|
+|12    |poker_uart__GC0 |           1|      4103|
+|13    |card_number__1  |           1|       259|
+|14    |card_number__2  |           1|       259|
+|15    |card_number__3  |           1|       261|
+|16    |card_number__4  |           1|       270|
+|17    |card_number__5  |           1|       266|
+|18    |card_number__6  |           1|       270|
+|19    |card_number__7  |           1|       258|
+|20    |card_number__8  |           1|       258|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:02:29 . Memory (MB): peak = 975.273 ; gain = 717.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:02:50 . Memory (MB): peak = 975.273 ; gain = 717.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives   | 
++------------+-----------------------------------+-----------+----------------------+--------------+
+|poker_uart  | UART_UNIT/FIFO_RX_UNIT/memory_reg | Implied   | 4 x 8                | RAM32M x 2   | 
+|poker_uart  | UART_UNIT/FIFO_TX_UNIT/memory_reg | Implied   | 4 x 8                | RAM32M x 2   | 
++------------+-----------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |hand_value      |           2|      8394|
+|2     |who_win__GC0    |           1|       246|
+|3     |card_number     |           1|       259|
+|4     |card_suit       |           1|      3310|
+|5     |opponent_action |           1|      6153|
+|6     |gameboard__GCB1 |           1|      3475|
+|7     |gameboard__GCB2 |           1|      2269|
+|8     |gameboard__GCB3 |           1|       538|
+|9     |win_animation   |           1|       441|
+|10    |gameboard__GCB5 |           1|        56|
+|11    |card_number__1  |           1|       259|
+|12    |card_number__2  |           1|       259|
+|13    |card_number__3  |           1|       261|
+|14    |card_number__4  |           1|       270|
+|15    |card_number__5  |           1|       266|
+|16    |card_number__6  |           1|       270|
+|17    |card_number__7  |           1|       258|
+|18    |card_number__8  |           1|       258|
+|19    |card_suit__1    |           1|      3313|
+|20    |card_suit__2    |           1|      3313|
+|21    |card_suit__3    |           1|      3310|
+|22    |card_suit__4    |           1|      3312|
+|23    |card_suit__5    |           1|      3310|
+|24    |card_suit__6    |           1|      3312|
+|25    |card_suit__7    |           1|      3310|
+|26    |card_suit__8    |           1|      3313|
+|27    |poker_uart_GT0  |           1|      7706|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (state_reg[4]) is unused and will be removed from module hand_value.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:03:00 . Memory (MB): peak = 1042.832 ; gain = 785.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:03:03 . Memory (MB): peak = 1042.832 ; gain = 785.516
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:03:03 . Memory (MB): peak = 1042.832 ; gain = 785.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:03:06 . Memory (MB): peak = 1042.832 ; gain = 785.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:03:07 . Memory (MB): peak = 1042.832 ; gain = 785.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:03:08 . Memory (MB): peak = 1042.832 ; gain = 785.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:03:08 . Memory (MB): peak = 1042.832 ; gain = 785.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |  3675|
+|3     |LUT1   |  1334|
+|4     |LUT2   |  3547|
+|5     |LUT3   |  2444|
+|6     |LUT4   |  3205|
+|7     |LUT5   |  2341|
+|8     |LUT6   |  6574|
+|9     |MUXF7  |   289|
+|10    |MUXF8  |    73|
+|11    |RAM32M |     4|
+|12    |FDCE   |   150|
+|13    |FDE_1  |    32|
+|14    |FDPE   |     3|
+|15    |FDRE   |  1016|
+|16    |FDSE   |    58|
+|17    |IBUF   |    14|
+|18    |OBUF   |    36|
+|19    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------------------+-------------------------+------+
+|      |Instance                                |Module                   |Cells |
++------+----------------------------------------+-------------------------+------+
+|1     |top                                     |                         | 24800|
+|2     |  CALL_DEBOUNCER                        |debounce_explicit        |   125|
+|3     |  UART_UNIT                             |uart_top                 |   214|
+|4     |    BAUD_RATE_GEN                       |baud_rate_generator      |    26|
+|5     |    FIFO_RX_UNIT                        |fifo                     |    90|
+|6     |    FIFO_TX_UNIT                        |fifo_33                  |    15|
+|7     |    UART_RX_UNIT                        |uart_receiver            |    37|
+|8     |    UART_TX_UNIT                        |uart_transmitter         |    46|
+|9     |  check_DEBOUNCER                       |debounce_explicit_0      |   120|
+|10    |  clk1kHz                               |flexible_clk             |    53|
+|11    |  clk6p25Hz                             |flexible_clk_1           |    51|
+|12    |  fold_DEBOUNCER                        |debounce_explicit_2      |   125|
+|13    |  gameplay                              |gameboard                |  8170|
+|14    |    flop1_N                             |card_number              |   185|
+|15    |    flop1_S                             |card_suit                |   532|
+|16    |    flop2_N                             |card_number_15           |  1109|
+|17    |    flop2_S                             |card_suit_16             |   479|
+|18    |    flop3_N                             |card_number_17           |    98|
+|19    |    flop3_S                             |card_suit_18             |   519|
+|20    |    hole1_N                             |card_number_19           |   115|
+|21    |    hole1_S                             |card_suit_20             |   558|
+|22    |    hole2_N                             |card_number_21           |    83|
+|23    |    hole2_S                             |card_suit_22             |   561|
+|24    |    lose                                |lose_animation           |    71|
+|25    |      clk_1Hz                           |flexible_clk_32          |    63|
+|26    |    opp                                 |opponent_action          |   897|
+|27    |    opp_hole1_N                         |card_number_23           |    77|
+|28    |    opp_hole1_S                         |card_suit_24             |   482|
+|29    |    opp_hole2_N                         |card_number_25           |    89|
+|30    |    opp_hole2_S                         |card_suit_26             |   494|
+|31    |    pot                                 |pot_amount               |   162|
+|32    |    river_N                             |card_number_27           |   112|
+|33    |    river_S                             |card_suit_28             |   528|
+|34    |    small_big                           |blind                    |    91|
+|35    |    starting_animation                  |init_animation           |   273|
+|36    |    turn_N                              |card_number_29           |    79|
+|37    |    turn_S                              |card_suit_30             |   506|
+|38    |    win                                 |win_animation            |    70|
+|39    |      clk_1Hz                           |flexible_clk_31          |    61|
+|40    |  money                                 |anode_display            |   126|
+|41    |  oled                                  |Oled_Display             |  4140|
+|42    |  poker                                 |game_flow                | 10808|
+|43    |    nolabel_line196                     |who_win                  |  8391|
+|44    |      oppHandValueFunction              |hand_value               |  4133|
+|45    |        highCardFunction                |HighCards_6              |    37|
+|46    |        isFOAKFunction                  |isFOAKChecker_7          |   703|
+|47    |        isFlushAndStraightFlushFunction |isStraightFlushChecker_8 |    45|
+|48    |        isFlushFunction                 |isFlushChecker_9         |   127|
+|49    |        isFullHouseFunction             |isFullHouseChecker_10    |   538|
+|50    |        isPairFunction                  |isPairChecker_11         |   704|
+|51    |        isStraightFunction              |isStraightChecker_12     |    56|
+|52    |        isTOAKFunction                  |isTOAKChecker_13         |   476|
+|53    |        isTwoPairFunction               |isTwoPairChecker_14      |   733|
+|54    |      playerHandValueFunction           |hand_value_5             |  4126|
+|55    |        highCardFunction                |HighCards                |    37|
+|56    |        isFOAKFunction                  |isFOAKChecker            |   703|
+|57    |        isFlushAndStraightFlushFunction |isStraightFlushChecker   |    45|
+|58    |        isFlushFunction                 |isFlushChecker           |   127|
+|59    |        isFullHouseFunction             |isFullHouseChecker       |   538|
+|60    |        isPairFunction                  |isPairChecker            |   704|
+|61    |        isStraightFunction              |isStraightChecker        |    56|
+|62    |        isTOAKFunction                  |isTOAKChecker            |   476|
+|63    |        isTwoPairFunction               |isTwoPairChecker         |   733|
+|64    |    rng                                 |CombinedLFSR             |   323|
+|65    |      cc                                |flexible_clk_4           |    50|
+|66    |      lfsr1                             |numgen                   |     7|
+|67    |      lfsr2                             |suitgen                  |     3|
+|68    |  raise_DEBOUNCER                       |debounce_explicit_3      |   129|
++------+----------------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:03:08 . Memory (MB): peak = 1042.832 ; gain = 785.516
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:02:41 . Memory (MB): peak = 1042.832 ; gain = 400.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:03:09 . Memory (MB): peak = 1042.832 ; gain = 785.516
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4087 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+411 Infos, 180 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:03:16 . Memory (MB): peak = 1042.832 ; gain = 798.797
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/puach/Documents/Y2S2/EE2026/poker_uart/poker_uart.runs/synth_1/poker_uart.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1042.832 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file poker_uart_utilization_synth.rpt -pb poker_uart_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1042.832 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  7 03:05:01 2024...

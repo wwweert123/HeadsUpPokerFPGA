@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../poker_uart.srcs/sources_1/new/CircularCounter.v" \
+"../../../../poker_uart.srcs/sources_1/new/CombinedLSFR.v" \
+"../../../../poker_uart.srcs/sources_1/new/flexible_clk.v" \
+"../../../../poker_uart.srcs/sources_1/new/numgen.v" \
+"../../../../poker_uart.srcs/sources_1/new/seedgen.v" \
+"../../../../poker_uart.srcs/sources_1/new/suitgen.v" \
+"../../../../poker_uart.srcs/sim_1/new/test_randomcards.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

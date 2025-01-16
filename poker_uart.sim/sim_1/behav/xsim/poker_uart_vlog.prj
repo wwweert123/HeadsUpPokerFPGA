@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../poker_uart.srcs/sources_1/new/HighCards.v" \
+"../../../../poker_uart.srcs/sources_1/new/Oled_Display.v" \
+"../../../../poker_uart.srcs/sources_1/new/anode_display.v" \
+"../../../../poker_uart.srcs/sources_1/new/baud_rate_generator.v" \
+"../../../../poker_uart.srcs/sources_1/new/blind.v" \
+"../../../../poker_uart.srcs/sources_1/new/card_number.v" \
+"../../../../poker_uart.srcs/sources_1/new/card_suit.v" \
+"../../../../poker_uart.srcs/sources_1/new/debounce_explicit.v" \
+"../../../../poker_uart.srcs/sources_1/new/fifo.v" \
+"../../../../poker_uart.srcs/sources_1/new/flexible_clk.v" \
+"../../../../poker_uart.srcs/sources_1/new/game_flow.v" \
+"../../../../poker_uart.srcs/sources_1/new/gameboard.v" \
+"../../../../poker_uart.srcs/sources_1/new/hand_value.v" \
+"../../../../poker_uart.srcs/sources_1/new/isFOAKChecker.v" \
+"../../../../poker_uart.srcs/sources_1/new/isFlushChecker.v" \
+"../../../../poker_uart.srcs/sources_1/new/isFullHouseChecker.v" \
+"../../../../poker_uart.srcs/sources_1/new/isPairChecker.v" \
+"../../../../poker_uart.srcs/sources_1/new/isStraightChecker.v" \
+"../../../../poker_uart.srcs/sources_1/new/isStraightFlushChecker.v" \
+"../../../../poker_uart.srcs/sources_1/new/isTOAKChecker.v" \
+"../../../../poker_uart.srcs/sources_1/new/isTwoPairChecker.v" \
+"../../../../poker_uart.srcs/sources_1/new/opponent_action.v" \
+"../../../../poker_uart.srcs/sources_1/new/pot_amount.v" \
+"../../../../poker_uart.srcs/sources_1/new/uart_receiver.v" \
+"../../../../poker_uart.srcs/sources_1/new/uart_top.v" \
+"../../../../poker_uart.srcs/sources_1/new/uart_transmitter.v" \
+"../../../../poker_uart.srcs/sources_1/new/who_win.v" \
+"../../../../poker_uart.srcs/sources_1/new/poker_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
